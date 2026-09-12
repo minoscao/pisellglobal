@@ -12,7 +12,7 @@
 ## Automated checks
 
 - 5 Node checks: stable exhibition identity, template extension, alias/place-id exclusions, invalid workstream/status rejection and safe evidence links.
-- 6 SQLite checks: 34 exhibitions / 147 venues, foreign keys, rerun without overwriting manual notes or exclusions, every exhibition/entry-guide source resolves, physical venue state does not create a customer, and stale note updates roll back a batch.
+- 7 SQLite checks: 34 exhibitions / 147 venues, foreign keys, rerun without overwriting manual notes or exclusions, rediscovered record IDs reuse the excluded venue identity, every exhibition/entry-guide source resolves, physical venue state does not create a customer, and stale note updates roll back a batch.
 - Local HTTP checks against actual Wrangler D1/R2: authenticated access, protected module assets, secure session cookies, foreign-Origin rejection, source integrity, exclusion/restore, stale note/project conflict rejection, R2 upload/download integrity, download access protection and revoked logout session.
 - Build and Wrangler deploy dry run succeed with D1, R2 and static assets bound. GitHub CI repeats syntax/model/database/build/dry-run checks.
 
@@ -34,3 +34,11 @@ Validation writes remain in the local database/R2 only. Production starts with t
 ## Limits
 
 Native browser 200% zoom has not been separately certified. Google Maps logged a non-blocking advanced-marker event deprecation warning and slow-network font fallback; maps and photos loaded. External sources remain dated research, and unverified dates/figures retain their original caveats. AI research backend, quotation, case-library connections and outbound contact are not claimed as active.
+
+## Production verification
+
+- Published at https://pisellglobal.minoscao.workers.dev with the D1 and private R2 bindings verified.
+- Real production HTTP: unauthenticated research rejected, administrator login successful, bootstrap / 34 exhibitions / 147 venues / empty file library read successfully, logout revoked.
+- Chromium authenticated production homepage inspected visually. No synthetic test records were written to production.
+- The original standalone Site exclusion table and fingerprint endpoint were checked at migration: both empty. Its data was not deleted or modified. The new workbench maintains its own authoritative exclusions; the older Site is not synchronised.
+- GitHub Actions passed the initial integration commit. Direct Cloudflare deployment is verified; connected-repository automatic build triggers could not be inspected with the available OAuth scope.

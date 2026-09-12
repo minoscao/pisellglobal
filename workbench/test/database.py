@@ -1,4 +1,4 @@
-import sqlite3, pathlib, json, unittest
+import sqlite3, pathlib, json, unittest, subprocess
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 class DatabaseTest(unittest.TestCase):
  def setUp(self):
@@ -10,6 +10,14 @@ class DatabaseTest(unittest.TestCase):
   self.db.execute("INSERT INTO record_notes(entity_type,entity_id,text,review,updated_by) VALUES('exhibition','atm','Manual decision','Shortlisted','test')")
   venue=self.db.execute('SELECT id,payload FROM venues LIMIT 1').fetchone();self.db.execute("INSERT INTO exclusions(id,snapshot,removed_by) VALUES(?,?,'test')",venue);self.db.commit();self.db.executescript((ROOT/'seed.sql').read_text(encoding='utf-8'))
   self.assertEqual(self.db.execute("SELECT text FROM record_notes").fetchone()[0],'Manual decision');self.assertEqual(self.db.execute('SELECT count(*) FROM exclusions').fetchone()[0],1);self.assertEqual(self.db.execute('SELECT count(*) FROM exhibitions').fetchone()[0],34)
+ def test_changed_record_id_keeps_excluded_identity(self):
+  venue=self.db.execute('SELECT id,payload FROM venues LIMIT 1').fetchone();self.db.execute("INSERT INTO exclusions(id,snapshot,removed_by) VALUES(?,?,'test')",venue);self.db.commit()
+  renamed=json.loads(venue[1]);renamed['id']='rediscovered-record'
+  statement=subprocess.run(['node','--input-type=module','-e',"import {venueStatements} from './scripts/venue-seed.mjs'; let input='';for await(const chunk of process.stdin)input+=chunk;console.log(venueStatements(JSON.parse(input)).join('\\n'));"],input=json.dumps(renamed),capture_output=True,text=True,encoding="utf-8",cwd=ROOT,check=True).stdout
+  self.db.executescript(statement)
+  self.assertEqual(self.db.execute('SELECT count(*) FROM venues').fetchone()[0],147)
+  self.assertEqual(self.db.execute("SELECT venue_id FROM venue_identity_keys WHERE key='record:rediscovered-record'").fetchone()[0],venue[0])
+  self.assertEqual(self.db.execute('SELECT count(*) FROM venues WHERE id NOT IN (SELECT id FROM exclusions)').fetchone()[0],146)
  def test_all_research_references_resolve(self):
   ids={x[0] for x in self.db.execute("SELECT source_id FROM source_collections WHERE collection='exhibitions'")}
   meta=json.loads(self.db.execute("SELECT payload FROM dataset_metadata WHERE key='exhibitions'").fetchone()[0]);
