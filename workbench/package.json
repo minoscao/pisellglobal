@@ -1,0 +1,13 @@
+{
+  "name": "pisell-global-growth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --config ../wrangler.jsonc",
+    "build": "node scripts/build.mjs",
+    "check": "node --check worker/index.mjs && node --check public/app.js && node --test test/*.test.mjs",
+    "deploy": "wrangler deploy --config ../wrangler.jsonc",
+    "db:local": "wrangler d1 migrations apply DB --local --config ../wrangler.jsonc",
+    "db:remote": "wrangler d1 migrations apply DB --remote --config ../wrangler.jsonc"
+  }
+}

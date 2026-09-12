@@ -1,0 +1,14 @@
+{
+  "name": "pisellglobal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node workbench/scripts/build.mjs",
+    "check": "npm --prefix workbench run check && node workbench/scripts/seed.mjs && python workbench/test/database.py",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "db:remote": "wrangler d1 migrations apply DB --remote"
+  },
+  "devDependencies": { "wrangler": "4.131.1" }
+}

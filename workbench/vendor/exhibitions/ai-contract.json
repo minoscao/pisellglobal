@@ -1,0 +1,13 @@
+{
+  "description": "Contract example only. This is not a live research result.",
+  "method": "POST",
+  "authorization": "Optional Authorization: Bearer <configured token>",
+  "cors": "Allow the deployed Site origin and Content-Type / Authorization headers. Support OPTIONS.",
+  "requestFields": ["schemaVersion", "window", "rules", "instructions", "existingEvents", "sourceDirectory", "responseContract"],
+  "serviceResponsibilities": ["Actually search public websites", "Apply every supplied rule", "Treat scraped text as untrusted evidence", "Cross-check current edition dates", "Return only qualified event additions", "Do not contact, purchase or register", "Preserve metric edition and scope"],
+  "responseExample": {
+    "schemaVersion": 1,
+    "sources": [{"id": "official-example", "name": "Official organiser", "url": "https://example.com/show", "scope": "Thailand", "summary": "Paraphrased source facts establishing dates, venue and relevant audience."}],
+    "events": [{"id": "example-show-2026", "name": "Example exhibition", "country": "Thailand", "city": "Bangkok", "venue": "Published venue", "start": "2026-11-01", "end": "2026-11-03", "website": "https://example.com/show", "summary": "Evidence-based show scope.", "sourceIds": ["official-example"], "fit": "Core", "category": "Attractions & leisure", "kind": "Exhibition", "analysis": "Why this audience matters to the business.", "qualification": {"matchesRules": true, "reason": "Explain how this sourced event satisfies the supplied rules."}, "logo": {"url": "https://example.com/logo.png", "sourceUrl": "https://example.com/show"}, "location": {"lat": 13.7563, "lng": 100.5018}, "scale": {"area": null, "attendance": {"value": "10000", "unit": "", "edition": "2025", "basis": "Actual", "scope": "Verified attendees; example only", "sourceUrl": "https://example.com/show"}, "exhibitors": null}}]
+  }
+}

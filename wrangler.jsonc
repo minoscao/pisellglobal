@@ -1,0 +1,34 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pisellglobal",
+  "account_id": "660184157223097c9afd3d253ec86ce6",
+  "main": "workbench/worker/index.mjs",
+  "compatibility_date": "2026-09-12",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./workbench/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pisellglobal-db",
+      "database_id": "4f0776ea-b248-4a9d-bf36-9911ddfc47e8",
+      "migrations_dir": "workbench/migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "pisellglobal-files"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "build": {
+    "command": "node workbench/scripts/build.mjs",
+    "cwd": "."
+  }
+}

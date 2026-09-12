@@ -1,0 +1,14 @@
+import {mkdir,cp,readFile,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=fileURLToPath(new URL('..',import.meta.url));
+await mkdir(path.join(root,'dist'),{recursive:true});
+await cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
+await cp(path.join(root,'vendor','exhibitions'),path.join(root,'dist','exhibitions'),{recursive:true});
+await cp(path.join(root,'vendor','venues'),path.join(root,'dist','venues'),{recursive:true});
+await cp(path.join(root,'public','pisell-logo.png'),path.join(root,'dist','venues','pisell-logo.png'));
+await cp(path.join(root,'public','pisell-logo.png'),path.join(root,'dist','exhibitions','pisell-logo.png'));
+const files=['index.html','app.js','style.css','world-map.json','exhibitions/tracker.js','exhibitions/connection.js','venues/index.html'];
+for(const f of files)await readFile(path.join(root,'dist',f));
+await writeFile(path.join(root,'dist','build.json'),JSON.stringify({builtAt:new Date().toISOString(),modules:['workspace','exhibitions','venue-discovery']}));
+console.log('Built workspace and two integrated modules. Research data is served from D1.');

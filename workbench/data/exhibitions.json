@@ -1,0 +1,3132 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-09-12",
+  "window": {
+    "start": "2026-09-01",
+    "end": "2026-12-31"
+  },
+  "title": "Exhibition Opportunity Tracker",
+  "events": [
+    {
+      "id": "atm",
+      "name": "Arabian Travel Market / ATM Travel Tech",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-09-14",
+      "end": "2026-09-17",
+      "venue": "Dubai World Trade Centre",
+      "category": "Travel & hospitality",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-atm",
+        "dir-dubai",
+        "scale-atm-70"
+      ],
+      "summary": "Travel trade and travel technology; destination, accommodation and distribution businesses.",
+      "analysis": "Useful for resort groups and booking/distribution partnerships. Qualify venue operations needs separately from travel distribution.",
+      "nextStep": "Check the visitor directory and identify resort/operator meetings.",
+      "issue": "Revised from May. Starts two days after this snapshot; participation feasibility needs immediate review.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "RX",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.wtm.com/atm/en-gb.html",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "55,000+",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Forecast",
+          "scope": "Whole ATM; not Travel Tech only",
+          "sourceUrl": "https://www.wtm.com/portfolio/en-gb/blog/press-releases/atm25-uniting-global-travel-experts.html"
+        },
+        "exhibitors": {
+          "value": "2,800+",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Forecast",
+          "scope": "Whole ATM; not Travel Tech only",
+          "sourceUrl": "https://www.wtm.com/portfolio/en-gb/blog/press-releases/atm25-uniting-global-travel-experts.html"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.wtm.com/atm/en-gb.html",
+          "https://www.wtm.com/portfolio/en-gb/blog/press-releases/atm25-uniting-global-travel-experts.html"
+        ]
+      },
+      "logo": {
+        "path": "logos/atm.png",
+        "url": "https://www.wtm.com/content/dam/sitebuilder/rxuk/atm/images/logos/828x280/atm26_828x280_atm_pos.png/_jcr_content/renditions/original.image_file.375.127.file/884413522/atm26_828x280_atm_pos.png",
+        "sourceUrl": "https://www.wtm.com/atm/en-gb.html",
+        "note": "ATM primary event logo; ATM Travel Tech is included in record name but is a separate lockup.",
+        "dark": false
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "shop-dubai",
+      "name": "Shop Arabia",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-09-22",
+      "end": "2026-09-24",
+      "venue": "Dubai World Trade Centre",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-shop-dubai"
+      ],
+      "summary": "Physical retail: store fit-out, digital signage, checkout and immersive in-store technology.",
+      "analysis": "Good match for multi-site retail operations and hardware/implementation partners. Mall and retail speakers do not establish purchase intent.",
+      "nextStep": "Map target retail groups and checkout partners.",
+      "issue": "Shares a venue and dates with the Seamless shows.",
+      "group": "seamless-dubai",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Terrapinn",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.terrapinn.com/exhibition/shop-arabia/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": {
+          "value": "125",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/shop-arabia/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.terrapinn.com/exhibition/shop-arabia/"
+        ]
+      },
+      "logo": {
+        "path": "logos/shop-dubai.gif",
+        "url": "https://www.terrapinn-cdn.com/logos/E10997.gif?776",
+        "sourceUrl": "https://www.terrapinn.com/exhibition/shop-arabia/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "commerce-dubai",
+      "name": "Seamless Digital Commerce",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-09-22",
+      "end": "2026-09-24",
+      "venue": "Dubai World Trade Centre",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-commerce-dubai",
+        "scale-commerce-dubai-71"
+      ],
+      "summary": "Retail, ecommerce, marketing, payments and the digital customer journey.",
+      "analysis": "Relevant to POS, loyalty and multi-channel operations; useful for retailer and implementation partner discovery.",
+      "nextStep": "Filter the current exhibitor list for POS, loyalty and retail software.",
+      "issue": "Count the co-located cluster once when planning a trip.",
+      "group": "seamless-dubai",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free professional visitor registration advertised; eligibility applies",
+      "organizer": "Terrapinn",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.terrapinn.com/exhibition/seamless-middle-east/index.stm",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "20,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Co-located audience may overlap",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east/"
+        },
+        "exhibitors": {
+          "value": "750",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Co-located audience may overlap",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.terrapinn.com/exhibition/seamless-middle-east/index.stm",
+          "https://www.terrapinn.com/exhibition/seamless-middle-east/"
+        ]
+      },
+      "logo": {
+        "path": "logos/commerce-dubai.gif",
+        "url": "https://www.terrapinn-cdn.com/logos/E10984.gif?662",
+        "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east/index.stm",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "fintech-dubai",
+      "name": "Seamless Fintech",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-09-22",
+      "end": "2026-09-24",
+      "venue": "Dubai World Trade Centre",
+      "category": "Payments & partners",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-fintech-dubai"
+      ],
+      "summary": "Fintech and payments ecosystem, including financial institutions and technology suppliers.",
+      "analysis": "A partner sourcing opportunity for payments and acquiring. Venue operators are not the main audience.",
+      "nextStep": "Identify acquirers and payment integration partners.",
+      "issue": "Co-located; do not add overlapping audience totals.",
+      "group": "seamless-dubai",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Terrapinn",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "20,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Co-located audience may overlap",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/"
+        },
+        "exhibitors": {
+          "value": "750",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Co-located audience may overlap",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/"
+        ]
+      },
+      "logo": {
+        "path": "logos/fintech-dubai.gif",
+        "url": "https://www.terrapinn-cdn.com/logos/E10983.gif?356",
+        "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "gitex",
+      "name": "GITEX GLOBAL",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-12-08",
+      "end": "2026-12-11",
+      "venue": "Dubai Exhibition Centre, Expo City",
+      "category": "Enterprise technology",
+      "fit": "Exploratory",
+      "sourceIds": [
+        "s-gitex",
+        "dir-dubai"
+      ],
+      "summary": "Large enterprise technology, AI and digital transformation exhibition.",
+      "analysis": "Broad partner discovery value; audience is less concentrated on leisure operations than TAAPE or IAAPA.",
+      "nextStep": "Use a preselected software/integrator meeting list.",
+      "issue": "Exhibition 8–11 Dec; summit 7 Dec. Older October/DWTC dates are superseded.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "DWTC",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.gitex.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "2026 moves to DEC. Previous venue capacity, number of halls and old-edition forecasts are not used as current exhibition area.",
+        "reviewedUrls": [
+          "https://www.gitex.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/gitex.png",
+        "url": "https://www.gitex.com/theme26/images/GG-logo-white10092026.png",
+        "sourceUrl": "https://www.gitex.com/",
+        "note": "Official 2026 combined GITEX GLOBAL / Expand North Star header lockup. Includes co-located show and dates.",
+        "dark": true
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "cabsat",
+      "name": "CABSAT",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-10-05",
+      "end": "2026-10-07",
+      "venue": "Dubai Exhibition Centre, Expo City",
+      "category": "AV & immersive",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-cabsat"
+      ],
+      "summary": "Broadcast, content production and professional AV; new Expo City venue.",
+      "analysis": "Useful for immersive content and AV integrators supporting attractions. Less direct for POS or venue software buyers.",
+      "nextStep": "Check immersive production and AV exhibitors.",
+      "issue": "Some page elements retain older co-location labels; use the current dates and venue.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free visitor pass advertised",
+      "organizer": "DWTC",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://cabsat.com/plan-your-visit",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "Official homepage counters returned zero before rendering. Zero is not treated as an attendance figure; requested official floor plan is form-gated.",
+        "reviewedUrls": [
+          "https://cabsat.com/plan-your-visit"
+        ]
+      },
+      "logo": {
+        "path": "logos/cabsat.png",
+        "url": "https://cabsat.com/assets/img/logo.png",
+        "sourceUrl": "https://cabsat.com/plan-your-visit",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "sgi",
+      "name": "SGI MENA (formerly SGI Dubai)",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-12-07",
+      "end": "2026-12-09",
+      "venue": "Dubai World Trade Centre",
+      "category": "AV & immersive",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-sgi",
+        "sgi-old"
+      ],
+      "summary": "Signage, printing, LED, digital displays, professional audio and lighting.",
+      "analysis": "Relevant to display hardware, signage and experience suppliers. A partner-focused addition to a December UAE visit.",
+      "nextStep": "Compare display/interactive signage suppliers and integrators.",
+      "issue": "Official website: 7–9 Dec. Third-party directories still list 28–30 Sep; do not use those September dates.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "GL Exhibitions",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.signmiddleeast.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.signmiddleeast.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/sgi.svg",
+        "url": "https://www.signmiddleeast.com/Logo.svg",
+        "sourceUrl": "https://www.signmiddleeast.com/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "active",
+      "name": "Dubai Active Industry",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "venue": "Dubai Exhibition Centre, Expo City",
+      "category": "Venue operations",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-active"
+      ],
+      "summary": "Fitness and wellness business exhibition with operator, technology and industry content.",
+      "analysis": "Good adjacent match for memberships, bookings, retention and multi-site fitness groups. Consumer activity elsewhere in the co-located event is less relevant.",
+      "nextStep": "Review the industry programme and gym/group operator list.",
+      "issue": "Older networking subpages retain 24–25 Oct. Use the 2026 main event dates.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "IEG Middle East",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://dubaiactiveindustry.com/",
+      "scale": {
+        "area": {
+          "value": "35,000",
+          "unit": "m²",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Event portfolio; net/gross unspecified",
+          "sourceUrl": "https://dubaiactiveindustry.com/"
+        },
+        "attendance": {
+          "value": "40,000 / 45,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Conflicting claims",
+          "scope": "Portfolio / consumer + trade; brands, not companies",
+          "sourceUrl": "https://dubaiactiveindustry.com/"
+        },
+        "exhibitors": {
+          "value": "450+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Conflicting claims",
+          "scope": "Portfolio / consumer + trade; brands, not companies",
+          "sourceUrl": "https://dubaiactiveindustry.com/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://dubaiactiveindustry.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/active.svg",
+        "url": "https://dubaiactiveindustry.com/img/dai/BrandLogo.svg",
+        "sourceUrl": "https://dubaiactiveindustry.com/",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 25.2048,
+        "lng": 55.2708,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "taape",
+      "name": "TAAPE",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "start": "2026-10-29",
+      "end": "2026-10-31",
+      "venue": "IMPACT Exhibition Center",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-taape",
+        "dir-thai",
+        "dir-raapa"
+      ],
+      "summary": "Amusement parks, family entertainment, attractions, water parks and related equipment.",
+      "analysis": "One of the strongest easy-entry matches for venue management, ticketing, cashless use and local supplier partnerships.",
+      "nextStep": "Prioritise a visitor/operator shortlist and a targeted venue software demo.",
+      "issue": "",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Grandeur / Compass exhibition network",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.taapeexpo.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.taapeexpo.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/taape.png",
+        "url": "https://www.taapeexpo.com/template/default_en/images/logo.png?v=1a",
+        "sourceUrl": "https://www.taapeexpo.com/",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 13.7563,
+        "lng": 100.5018,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "digitech",
+      "name": "DigiTech ASEAN Thailand & AI Connect",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "start": "2026-11-25",
+      "end": "2026-11-27",
+      "venue": "IMPACT, Halls 7–8",
+      "category": "Enterprise technology",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-digitech",
+        "scale-digitech-72"
+      ],
+      "summary": "Enterprise software, digital services, AI, IoT and business technology.",
+      "analysis": "Useful for Thai implementation partners and chain digitalisation. Confirm leisure/retail end-user attendance before exhibiting.",
+      "nextStep": "Shortlist local systems integrators and business software partners.",
+      "issue": "",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free visitor registration advertised",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://digitechasean.com/",
+      "scale": {
+        "area": {
+          "value": "10,000",
+          "unit": "m²",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "With AI Connect; net/gross unspecified",
+          "sourceUrl": "https://digitechasean.com/overview/"
+        },
+        "attendance": {
+          "value": "12,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "With AI Connect",
+          "sourceUrl": "https://digitechasean.com/overview/"
+        },
+        "exhibitors": {
+          "value": "400",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "With AI Connect",
+          "sourceUrl": "https://digitechasean.com/overview/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://digitechasean.com/",
+          "https://digitechasean.com/overview/"
+        ]
+      },
+      "logo": {
+        "path": "logos/digitech.png",
+        "url": "https://digitechasean.com/wp-content/uploads/2023/02/digitech_logo_dark-gradient.png",
+        "sourceUrl": "https://digitechasean.com/",
+        "note": "DigiTech ASEAN event brand; not a separate AI Connect mark.",
+        "dark": true
+      },
+      "location": {
+        "lat": 13.7563,
+        "lng": 100.5018,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "seashop",
+      "name": "SEA SHOP / SAVM",
+      "country": "Malaysia",
+      "city": "Kuala Lumpur",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "venue": "MITEC",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-seashop"
+      ],
+      "summary": "Retail equipment, vending and self-service facilities.",
+      "analysis": "Relevant hardware and self-service partners; evaluate whether operators or equipment traders dominate the 2026 audience.",
+      "nextStep": "Check the 2026 exhibitor directory and country distribution.",
+      "issue": "This November event is distinct from September ASEAN vending listings.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Guangdong Huachuang Digital Intelligence Exhibition",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://en.aisacve.com/",
+      "scale": {
+        "area": {
+          "value": "10,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Unit unconfirmed",
+          "scope": "Source omits area unit; joint shows",
+          "sourceUrl": "https://en.aisacve.com/"
+        },
+        "attendance": {
+          "value": "20,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised; edition unclear",
+          "scope": "SEA SHOP + SAVM + RTSE",
+          "sourceUrl": "https://en.aisacve.com/"
+        },
+        "exhibitors": {
+          "value": "300+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised; edition unclear",
+          "scope": "SEA SHOP + SAVM + RTSE",
+          "sourceUrl": "https://en.aisacve.com/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://en.aisacve.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/seashop.png",
+        "url": "https://en.aisacve.com/static/upload/image/20251215/1765789810597195.png",
+        "sourceUrl": "https://en.aisacve.com/",
+        "note": "Official combined SEA SHOP EXPO / SAVM / RTSE logo, visually verified. Includes co-located RTSE mark.",
+        "dark": false
+      },
+      "location": {
+        "lat": 3.139,
+        "lng": 101.6869,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "techweek",
+      "name": "Tech Week Singapore",
+      "country": "Singapore",
+      "city": "Singapore",
+      "start": "2026-09-29",
+      "end": "2026-09-30",
+      "venue": "Sands Expo & Convention Centre",
+      "category": "Enterprise technology",
+      "fit": "Exploratory",
+      "sourceIds": [
+        "s-techweek"
+      ],
+      "summary": "Co-located cloud, AI, data, cybersecurity and infrastructure technology events.",
+      "analysis": "Broad technology ecosystem; a weaker direct venue sales match. Use only for a focused partner agenda.",
+      "nextStep": "Identify a small cloud/data integration partner list.",
+      "issue": "Do not assume an ecommerce exhibition is part of the 2026 portfolio.",
+      "group": "techweek-singapore",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free for eligible business attendees",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.singaporetechnologyweek.com/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "29,000+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised benchmark",
+          "scope": "Five co-located shows combined",
+          "sourceUrl": "https://www.singaporetechnologyweek.com/"
+        },
+        "exhibitors": {
+          "value": "500+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised benchmark",
+          "scope": "Five co-located shows combined",
+          "sourceUrl": "https://www.singaporetechnologyweek.com/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.singaporetechnologyweek.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/techweek.png",
+        "url": "https://cdn.asp.events/CLIENT_CloserSt_D86EA381_5056_B739_5482D50A1A831DDD/sites/techweek-singapore-2025/media/show-logo/Tech-Week-Singapore-Logo-2022-wo.png",
+        "sourceUrl": "https://www.singaporetechnologyweek.com/",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 1.3521,
+        "lng": 103.8198,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "itb",
+      "name": "ITB Asia / Travel Tech Asia",
+      "country": "Singapore",
+      "city": "Singapore",
+      "start": "2026-10-21",
+      "end": "2026-10-23",
+      "venue": "Sands Expo & Convention Centre",
+      "category": "Travel & hospitality",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-itb",
+        "itb-main",
+        "scale-itb-73"
+      ],
+      "summary": "Travel trade and technology alongside ITB Asia and MICE Show Asia.",
+      "analysis": "Promising for resort groups, attraction distribution and booking technology. Separate travel distribution needs from on-site operations.",
+      "nextStep": "Screen resort/operator and travel-tech exhibitors.",
+      "issue": "Treat the co-located shows as one travel cluster.",
+      "group": "itb-singapore",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Messe Berlin Asia Pacific",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.traveltechasia.com/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "18,000+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Whole ITB Asia; not Travel Tech only",
+          "sourceUrl": "https://www.itb-asia.com/resources/ck/files/Exhibit/Collective-Brochure-2026.pdf"
+        },
+        "exhibitors": {
+          "value": "1,000+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Whole ITB Asia; not Travel Tech only",
+          "sourceUrl": "https://www.itb-asia.com/resources/ck/files/Exhibit/Collective-Brochure-2026.pdf"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.traveltechasia.com/",
+          "https://www.itb-asia.com/resources/ck/files/Exhibit/Collective-Brochure-2026.pdf"
+        ]
+      },
+      "logo": {
+        "path": "logos/itb.png",
+        "url": "https://static.wixstatic.com/media/481c3f_5e164ed387f94d68a43db2ed6c6b99a8~mv2.png/v1/fill/w_160,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/481c3f_5e164ed387f94d68a43db2ed6c6b99a8~mv2.png",
+        "sourceUrl": "https://www.traveltechasia.com/",
+        "note": "Travel Tech Asia logo, one named component of this combined ITB Asia / Travel Tech Asia record.",
+        "dark": false
+      },
+      "location": {
+        "lat": 1.3521,
+        "lng": 103.8198,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "sff",
+      "name": "Singapore FinTech Festival",
+      "country": "Singapore",
+      "city": "Singapore",
+      "start": "2026-11-18",
+      "end": "2026-11-20",
+      "venue": "Singapore EXPO",
+      "category": "Payments & partners",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-sff"
+      ],
+      "summary": "Financial technology, payment networks and financial services innovation.",
+      "analysis": "Useful for payments and regional partnership development. Low concentration of leisure buyers.",
+      "nextStep": "Use only if payment partners are a current priority.",
+      "issue": "",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Multiple pass types; current rate not verified",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.fintechfestival.sg/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "70,000+",
+          "unit": "",
+          "edition": "Unspecified",
+          "basis": "Advertised benchmark",
+          "scope": "Homepage mixes 2025 / 2026 content",
+          "sourceUrl": "https://www.fintechfestival.sg/"
+        },
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.fintechfestival.sg/"
+        ]
+      },
+      "logo": {
+        "path": "logos/sff.png",
+        "url": "https://www.fintechfestival.sg/hs-fs/hubfs/sff2026_logo_revwht-1.webp?width=200&height=57&name=sff2026_logo_revwht-1.webp",
+        "sourceUrl": "https://www.fintechfestival.sg/",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 1.3521,
+        "lng": 103.8198,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "inashop",
+      "name": "INA SHOP EXPO",
+      "country": "Indonesia",
+      "city": "Greater Jakarta / Tangerang",
+      "start": "2026-11-04",
+      "end": "2026-11-07",
+      "venue": "NICE, PIK 2",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-inashop"
+      ],
+      "summary": "Retail equipment and technology exhibition organised by Krista.",
+      "analysis": "Potential source of retail chains, hardware distributors and local service partners. Buyer quality needs further checking.",
+      "nextStep": "Verify the exhibitor list, programme and business visitor entry route.",
+      "issue": "Official indexed dates; full site retrieval was intermittent. Some exhibitor content is incomplete.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official indexed date",
+      "cost": "Not verified",
+      "organizer": "Krista Exhibitions",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://inashopexpo.co.id/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "65,000 m² / 50,000 visitor figures circulate for the co-located series; individual INA SHOP scope was not confirmed, so these are not used as event totals.",
+        "reviewedUrls": [
+          "https://inashopexpo.co.id/"
+        ]
+      },
+      "logo": {
+        "path": "logos/inashop.png",
+        "url": "https://inashopexpo.co.id/uploads/setting/logo-site-36.png",
+        "sourceUrl": "https://inashopexpo.co.id/",
+        "note": "Official site header logo. Downloaded despite site certificate hostname mismatch; visual mark verified.",
+        "dark": false
+      },
+      "location": {
+        "lat": -6.1783,
+        "lng": 106.6319,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "raapa",
+      "name": "RAAPA EXPO AUTUMN",
+      "country": "Russia",
+      "city": "Moscow",
+      "start": "2026-10-21",
+      "end": "2026-10-22",
+      "venue": "VDNH, Pavilion 57",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-raapa",
+        "dir-raapa"
+      ],
+      "summary": "Amusement attractions, parks and family entertainment equipment; industry automation content.",
+      "analysis": "Direct operator fit for venue software, ticketing and cashless workflows. Assess Russian localisation and payment/service support before committing.",
+      "nextStep": "Review automation exhibitors and local partner options.",
+      "issue": "Trade show 21–22 Oct. Training/forum dates differ; do not substitute the longer programme.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "RAAPA",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://raapa-expo.ru/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://raapa-expo.ru/"
+        ]
+      },
+      "location": {
+        "lat": 55.7558,
+        "lng": 37.6173,
+        "precision": "Approximate city centre; not the exhibition venue"
+      },
+      "logo": {
+        "path": "logos/raapa.jpg",
+        "url": "https://raapa.ru/upload/iblock/a98/vb2wii4r37a3wz0cx2vcm5jyy40r6x5g/%D1%81%D0%B0%D0%B9%D1%82_a.jpg",
+        "sourceUrl": "https://raapa.ru/en/",
+        "note": "Official RAAPA EXPO Autumn 2026 poster; event imagery fallback, not standalone logo. Correct October 21–22 edition.",
+        "type": "event_poster",
+        "dark": false
+      }
+    },
+    {
+      "id": "leisure-japan",
+      "name": "Leisure Japan",
+      "country": "Japan",
+      "city": "Tokyo",
+      "start": "2026-11-25",
+      "end": "2026-11-27",
+      "venue": "Tokyo Big Sight, East Halls",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-leisure-japan"
+      ],
+      "summary": "Leisure facilities, attractions, entertainment and related operational solutions.",
+      "analysis": "Strong attraction/venue match with booking and ticketing relevance. Japanese-language sales and support capacity affect feasibility.",
+      "nextStep": "Review the ticketing/booking zone and prepare Japanese materials.",
+      "issue": "Some page titles retain 2025 while the event content specifies 2026; recheck registration opening.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "TSO International",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://leisure-japan.jp/en/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "21,107",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Visitor total; repeat-visit basis unspecified",
+          "sourceUrl": "https://leisure-japan.jp/en/"
+        },
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://leisure-japan.jp/en/"
+        ]
+      },
+      "logo": {
+        "path": "logos/leisure-japan.png",
+        "url": "https://leisure-japan.jp/wpljj/wp-content/themes/leisure_japan_theme/img/common/logo01_en.png?2",
+        "sourceUrl": "https://leisure-japan.jp/en/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 35.6762,
+        "lng": 139.6503,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "iaapa-europe",
+      "name": "IAAPA Expo Europe",
+      "country": "United Kingdom",
+      "city": "London",
+      "start": "2026-09-22",
+      "end": "2026-09-24",
+      "venue": "ExCeL London",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-iaapa-europe",
+        "dir-iaapa",
+        "dir-tea",
+        "dir-balppa",
+        "scale-iaapa-europe-74"
+      ],
+      "summary": "European attractions industry exhibition for operators and suppliers.",
+      "analysis": "Very strong direct fit; visa and short planning lead time may make this edition difficult without existing travel documents.",
+      "nextStep": "Review existing UK visa readiness before considering attendance.",
+      "issue": "Show floor 22–24 Sep; education programme 21–25 Sep.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "IAAPA",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://iaapa.org/expos-and-events/expo-europe",
+      "scale": {
+        "area": {
+          "value": "20,700",
+          "unit": "m²",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Barcelona edition; exhibition space",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-expo-europe-2025-concludes-barcelona-spain"
+        },
+        "attendance": {
+          "value": "15,877",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Barcelona edition; verified attendees",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-expo-europe-2025-concludes-barcelona-spain"
+        },
+        "exhibitors": {
+          "value": "700+",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Barcelona edition; verified attendees",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-expo-europe-2025-concludes-barcelona-spain"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://iaapa.org/expos-and-events/expo-europe",
+          "https://iaapa.org/about/press-room/press-release-expo-europe-2025-concludes-barcelona-spain"
+        ]
+      },
+      "logo": {
+        "path": "logos/iaapa-europe.png",
+        "url": "https://iaapa-web.s3.us-west-2.amazonaws.com/public/2025-01/IAAPA%20Expo%20Europe_Master%20Logo.png?VersionId=AiDTPnUIVncrXPXGPcj3aPpi49NTBXeh",
+        "sourceUrl": "https://iaapa.org/expos-and-events/expo-europe",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 51.5074,
+        "lng": -0.1278,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "llt",
+      "name": "Land Leisure & Tourism Show",
+      "country": "United Kingdom",
+      "city": "Birmingham",
+      "start": "2026-11-04",
+      "end": "2026-11-05",
+      "venue": "NEC Birmingham",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-llt"
+      ],
+      "summary": "Visitor attractions, holiday parks, land diversification and experience businesses.",
+      "analysis": "Good match for booking, visitor management and multi-activity operations, with identifiable software exhibitors.",
+      "nextStep": "Compare operator profiles and booking/park software exhibitors.",
+      "issue": "Legacy Family Attraction Expo references should not be added as a duplicate event.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free visitor pass advertised",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.lltshow.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": {
+          "value": "200+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "",
+          "sourceUrl": "https://www.lltshow.com/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.lltshow.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/llt.png",
+        "url": "https://cdn.asp.events/CLIENT_Briefing_1C55814B_5056_B739_544022F19077A8D2/sites/LLT2024/media/Land-Lesuire-and-Tourism-Show-Horizontal-Logo_Horizontal-White.png",
+        "sourceUrl": "https://www.lltshow.com/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 52.4862,
+        "lng": -1.8904,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "wtm",
+      "name": "WTM London / WTM Travel Tech",
+      "country": "United Kingdom",
+      "city": "London",
+      "start": "2026-11-03",
+      "end": "2026-11-05",
+      "venue": "ExCeL London",
+      "category": "Travel & hospitality",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-wtm",
+        "scale-wtm-75"
+      ],
+      "summary": "Travel technology exhibition alongside the international travel trade show.",
+      "analysis": "Relevant for attraction distribution, resort groups and booking partners. The broad travel audience needs qualification.",
+      "nextStep": "Prioritise resort and attraction technology meetings.",
+      "issue": "Overlaps LLT in Birmingham and MAPIC in Cannes; a full visit to all three is not feasible.",
+      "group": "wtm-london",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Visitor tickets charged from registration launch; current rate not verified",
+      "organizer": "RX",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.wtm.com/london/en-gb/travel-tech.html",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "46,000+",
+          "unit": "",
+          "edition": "Unspecified",
+          "basis": "Advertised benchmark",
+          "scope": "Whole WTM; not Travel Tech only",
+          "sourceUrl": "https://www.wtm.com/london/en-gb.html?Country=ANGOLA"
+        },
+        "exhibitors": {
+          "value": "4,000+",
+          "unit": "",
+          "edition": "Unspecified",
+          "basis": "Advertised benchmark",
+          "scope": "Whole WTM; not Travel Tech only",
+          "sourceUrl": "https://www.wtm.com/london/en-gb.html?Country=ANGOLA"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.wtm.com/london/en-gb/travel-tech.html",
+          "https://www.wtm.com/london/en-gb.html?Country=ANGOLA"
+        ]
+      },
+      "logo": {
+        "path": "logos/wtm.png",
+        "url": "https://www.wtm.com/content/dam/sitebuilder/rxuk/wtmkt/logo/828x280/828x280_WTM_London_rev.png/_jcr_content/renditions/original.image_file.592.201.file/804130628/828x280_WTM_London_rev.png",
+        "sourceUrl": "https://www.wtm.com/london/en-gb/travel-tech.html",
+        "note": "WTM London primary event logo; Travel Tech is part of combined record.",
+        "dark": true
+      },
+      "location": {
+        "lat": 51.5074,
+        "lng": -0.1278,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "iaapa-us",
+      "name": "IAAPA Expo",
+      "country": "United States",
+      "city": "Orlando",
+      "start": "2026-11-17",
+      "end": "2026-11-20",
+      "venue": "Orange County Convention Center",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-iaapa-us",
+        "dir-iaapa",
+        "dir-tea",
+        "scale-iaapa-us-76"
+      ],
+      "summary": "Major international attractions and amusement industry trade show.",
+      "analysis": "Strong benchmark and customer/partner discovery platform. Travel cost, US visa timing and support capability need to justify participation.",
+      "nextStep": "Build a prequalified operator and technology partner list.",
+      "issue": "Show floor 17–20 Nov; education dates differ.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "IAAPA",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://iaapa.org/expos-and-events/iaapa-expo",
+      "scale": {
+        "area": {
+          "value": "565,000+",
+          "unit": "ft²",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Exhibition space; net/gross unspecified",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-iaapa-expo-2025-conclues-with-record-breaking-attendance"
+        },
+        "attendance": {
+          "value": "38,520",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Verified attendees",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-iaapa-expo-2025-conclues-with-record-breaking-attendance"
+        },
+        "exhibitors": {
+          "value": "1,100+",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Verified attendees",
+          "sourceUrl": "https://iaapa.org/about/press-room/press-release-iaapa-expo-2025-conclues-with-record-breaking-attendance"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://iaapa.org/expos-and-events/iaapa-expo",
+          "https://iaapa.org/about/press-room/press-release-iaapa-expo-2025-conclues-with-record-breaking-attendance"
+        ]
+      },
+      "logo": {
+        "path": "logos/iaapa-us.png",
+        "url": "https://iaapa-web.s3.us-west-2.amazonaws.com/public/2025-01/IAAPA%20Expo_Master%20Logo.png?VersionId=4ye3d6xdUUV.6xGSgHa4zXRfCh9ejsWa",
+        "sourceUrl": "https://iaapa.org/expos-and-events/iaapa-expo",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 28.5383,
+        "lng": -81.3792,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "wwa",
+      "name": "WWA Symposium & Trade Show",
+      "country": "United States",
+      "city": "Las Vegas",
+      "start": "2026-10-07",
+      "end": "2026-10-08",
+      "venue": "Paris Las Vegas Resort & Convention Center",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-wwa",
+        "scale-wwa-77"
+      ],
+      "summary": "Waterpark operator and supplier event with education and trade exhibition.",
+      "analysis": "Focused fit for waterpark admission, lockers, cashless wristbands and guest spending. Smaller sector scope can improve meeting relevance.",
+      "nextStep": "Check waterpark operators and cashless/ticketing suppliers.",
+      "issue": "Trade show 7–8 Oct; symposium 6–9 Oct.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "World Waterpark Association",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.wwashow.org/the-show-venue/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": {
+          "value": "200+",
+          "unit": "companies",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "350+ booths; booth count is not company count",
+          "sourceUrl": "https://www.wwashow.org/wp-content/uploads/2026/05/2026-ExhibitorBrochure-LasVegas.pdf"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.wwashow.org/the-show-venue/"
+        ]
+      },
+      "logo": {
+        "path": "logos/wwa.png",
+        "url": "https://www.wwashow.org/wp-content/uploads/2026/03/2026-logo.png",
+        "sourceUrl": "https://www.wwashow.org/the-show-venue/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 36.1699,
+        "lng": -115.1398,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "mapic",
+      "name": "MAPIC / LeisurUp",
+      "country": "France",
+      "city": "Cannes",
+      "start": "2026-11-03",
+      "end": "2026-11-04",
+      "venue": "Palais des Festivals",
+      "category": "Retail & leisure property",
+      "fit": "Core",
+      "sourceIds": [
+        "s-mapic",
+        "dir-tea",
+        "dir-rli"
+      ],
+      "summary": "Retail property, leisure operators and entertainment-led destinations.",
+      "analysis": "Strong for mall groups, FEC projects and diversified operators. Property contacts are not automatically software buyers.",
+      "nextStep": "Map developers, leisure operators and group-level operational decision makers.",
+      "issue": "LeisurUp is part of the MAPIC programme; no duplicate attendance totals.",
+      "group": "mapic",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "RX",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.mapic.com/en-gb/what-is-mapic/leisurup-by-mapic.html",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.mapic.com/en-gb/what-is-mapic/leisurup-by-mapic.html"
+        ]
+      },
+      "logo": {
+        "path": "logos/mapic.png",
+        "url": "https://www.mapic.com/content/dam/sitebuilder/rm/mapic/2025/refonte/mapic-logo-240x90.png/_jcr_content/renditions/original.image_file.238.90.file/627689358/mapic-logo-240x90.png",
+        "sourceUrl": "https://www.mapic.com/en-gb/what-is-mapic/leisurup-by-mapic.html",
+        "note": "MAPIC primary event logo; LeisurUp is the related named programme.",
+        "dark": false
+      },
+      "location": {
+        "lat": 43.5528,
+        "lng": 7.0174,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "nrf-europe",
+      "name": "NRF Retail’s Big Show Europe",
+      "country": "France",
+      "city": "Paris",
+      "start": "2026-09-15",
+      "end": "2026-09-17",
+      "venue": "Paris Expo Porte de Versailles",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-nrf-europe",
+        "nrf-release",
+        "nrf-conflict",
+        "scale-nrf-europe-78"
+      ],
+      "summary": "Retail technology, operations and store innovation.",
+      "analysis": "Strong multi-site retail software fit. Limited lead time and Schengen requirements favour already-prepared travellers.",
+      "nextStep": "Focus on retailer operations and implementation partners.",
+      "issue": "Dedicated 2026 press release confirms 15–17 Sep; NRF global directory says 17–19 Sep and a practical page has a year typo.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Comexposium / NRF",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.nrfbigshoweurope.com/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "15,000+",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Forecast",
+          "scope": "2025 campaign; not 2026 actual attendance",
+          "sourceUrl": "https://www.nrfbigshoweurope.com/en/campaigns/pmax-paid-acquisition-visiteur-en"
+        },
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.nrfbigshoweurope.com/",
+          "https://www.nrfbigshoweurope.com/en/campaigns/pmax-paid-acquisition-visiteur-en"
+        ]
+      },
+      "logo": {
+        "path": "logos/nrf-europe.jpg",
+        "url": "https://www.nrfbigshoweurope.com/-/media/Project/Comexposium-Master1/Master1-NRF-M1/logos-2026/nrf_26_rbs_europe__wordmark_red_horizontal3.jpg?rev=04b3c30ff997420ea024663571ff171f",
+        "sourceUrl": "https://www.nrfbigshoweurope.com/en",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "interbad",
+      "name": "interbad",
+      "country": "Germany",
+      "city": "Stuttgart",
+      "start": "2026-10-06",
+      "end": "2026-10-08",
+      "venue": "Messe Stuttgart",
+      "category": "Venue operations",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-interbad",
+        "scale-interbad-79"
+      ],
+      "summary": "Swimming pools, sauna, spa and technologies for operators, builders and planners.",
+      "analysis": "Useful for paid-entry aquatic and wellness venues. Many suppliers concern pool infrastructure rather than management software.",
+      "nextStep": "Check access-control and operator-facing technology exhibitors.",
+      "issue": "",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Messe Stuttgart",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.messe-stuttgart.de/interbad/en/fair/at-a-glance/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "≈8,000",
+          "unit": "",
+          "edition": "2024",
+          "basis": "Actual",
+          "scope": "Nearly 8,000 visitors",
+          "sourceUrl": "https://www.messe-stuttgart.de/interbad/en/fair/review/review-2024/"
+        },
+        "exhibitors": {
+          "value": "276",
+          "unit": "",
+          "edition": "2024",
+          "basis": "Actual",
+          "scope": "Nearly 8,000 visitors",
+          "sourceUrl": "https://www.messe-stuttgart.de/interbad/en/fair/review/review-2024/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.messe-stuttgart.de/interbad/en/fair/at-a-glance/",
+          "https://www.messe-stuttgart.de/interbad/en/fair/review/review-2024/"
+        ]
+      },
+      "location": {
+        "lat": 48.7758,
+        "lng": 9.1829,
+        "precision": "Approximate city centre; not the exhibition venue"
+      },
+      "logo": {
+        "path": "logos/interbad.jpg",
+        "url": "https://www.ahk.es/var/site/storage/images/_aliases/image_720/2/1/6/6/1976612-1-ger-DE/526ad41e2e51-Logo-_0007_Interbad.jpg",
+        "sourceUrl": "https://www.ahk.es/es/servicios/ferias-en-alemania/feria-stuttgart/interbad---el-mundo-de-las-piscinas%2C-saunas-y-spas",
+        "note": "Genuine event logo published by AHK Spain, not organizer-hosted.",
+        "type": "event_logo",
+        "dark": false
+      }
+    },
+    {
+      "id": "inout",
+      "name": "InOut | The Hospitality Community",
+      "country": "Italy",
+      "city": "Rimini",
+      "start": "2026-10-14",
+      "end": "2026-10-16",
+      "venue": "Rimini Expo Centre",
+      "category": "Travel & hospitality",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-inout"
+      ],
+      "summary": "Hospitality technology, pools, camping, sports and entertainment; co-located with TTG.",
+      "analysis": "Relevant to resort operations, accommodation groups and leisure facilities. Qualify demand beyond furnishing and construction.",
+      "nextStep": "Review Technology & Innovation and Sport & Entertainment areas.",
+      "issue": "TTG/InOut activities overlap at one venue.",
+      "group": "ttg-inout",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Ticketing open; current rate not verified",
+      "organizer": "Italian Exhibition Group",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.inoutexpo.it/en",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "Published areas for individual pools/design zones are not the total InOut exhibition area. Joint TTG buyer/meeting counts are not visitor totals.",
+        "reviewedUrls": [
+          "https://www.inoutexpo.it/en"
+        ]
+      },
+      "location": {
+        "lat": 44.0678,
+        "lng": 12.5695,
+        "precision": "Approximate city centre; not the exhibition venue"
+      },
+      "logo": {
+        "path": "logos/inout.jpg",
+        "url": "https://www.mondobalneare.com/wp-content/uploads/2025/10/inout-2026.jpg",
+        "sourceUrl": "https://www.mondobalneare.com/fiere/inout-2026/",
+        "note": "Genuine InOut 2026 promotional poster published by Mondo Balneare; correct October 14–16 2026 edition. Not standalone logo.",
+        "type": "event_poster",
+        "dark": false
+      }
+    },
+    {
+      "id": "aaa",
+      "name": "AAAEXPO Africa Amusement & Attractions",
+      "country": "Morocco",
+      "city": "Rabat",
+      "start": "2026-10-21",
+      "end": "2026-10-24",
+      "venue": "Rabat; exact exhibition venue needs confirmation",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-aaa"
+      ],
+      "summary": "New Africa-focused amusement, attractions and leisure industry exhibition.",
+      "analysis": "Direct sector fit and favourable Chinese passport entry. As a first edition, operator attendance and delivery quality need validation.",
+      "nextStep": "Verify the venue, floor plan, operator list and first-edition programme before travel.",
+      "issue": "Dates and city published; do not mistake the organiser office in Temara for the exhibition venue.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.aaaexpo.ma/",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "10,000+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Forecast",
+          "scope": "First edition targets",
+          "sourceUrl": "https://www.aaaexpo.ma/"
+        },
+        "exhibitors": {
+          "value": "100+",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Forecast",
+          "scope": "First edition targets",
+          "sourceUrl": "https://www.aaaexpo.ma/"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.aaaexpo.ma/"
+        ]
+      },
+      "logo": {
+        "path": "logos/aaa.svg",
+        "url": "https://www.aaaexpo.ma/__l5e/assets-v1/193fbf3f-650b-4fe1-9d0c-8abe05879030/aaaexpo-logo.svg",
+        "sourceUrl": "https://www.aaaexpo.ma/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 34.0209,
+        "lng": -6.8416,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "vifs",
+      "name": "Vietnam International Franchise Show (VIFS)",
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "start": "2026-10-29",
+      "end": "2026-10-31",
+      "venue": "SECC",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-vifs"
+      ],
+      "summary": "Franchise, retail and chain business event, formerly VIETRF.",
+      "analysis": "Relevant to single-business chain groups and retail operations, with less direct playground concentration.",
+      "nextStep": "Screen chain operators and local retail technology partners.",
+      "issue": "Same dates as TAAPE; choose based on the priority customer type.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Coex Vina / VFLN",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://vietfranchise.vn/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://vietfranchise.vn/"
+        ]
+      },
+      "logo": {
+        "path": "logos/vifs.png",
+        "url": "https://vietfranchise.vn/wp-content/uploads/2026/04/cropped-VIFS-Logo-Color-scaled-1.png",
+        "sourceUrl": "https://vietfranchise.vn/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 10.8231,
+        "lng": 106.6297,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "saudi-retail",
+      "name": "Saudi Retail Show",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "start": "2026-10-07",
+      "end": "2026-10-08",
+      "venue": "Riyadh Airport Marriott Hotel",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-saudi-retail"
+      ],
+      "summary": "Retail, customer experience, digital transformation and omnichannel commerce.",
+      "analysis": "Potential chain and mall operations contacts. Validate current delegate list and event format before allocating a booth budget.",
+      "nextStep": "Obtain the current programme and attendee eligibility details.",
+      "issue": "Official search index shows the dates; page body did not render in the research reader.",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official indexed date",
+      "cost": "Not verified",
+      "organizer": "Valiant Business Media",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://saudiretailshow.com/ar",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "Official page is not reliably readable; area and audience remain unconfirmed.",
+        "reviewedUrls": [
+          "https://saudiretailshow.com/ar"
+        ]
+      },
+      "logo": {
+        "path": "logos/saudi-retail.svg",
+        "url": null,
+        "sourceUrl": "https://saudiretailshow.com/ar",
+        "note": "Original official header SVG extracted verbatim from published JavaScript asset. No separate image URL; use local asset.",
+        "dark": false
+      },
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "seamless-saudi",
+      "name": "Seamless Saudi Arabia",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "start": "2026-11-09",
+      "end": "2026-11-10",
+      "venue": "Riyadh Front",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-seamless-saudi"
+      ],
+      "summary": "Digital commerce, payments, POS, loyalty and omnichannel retail.",
+      "analysis": "Strong partner and chain digitalisation fit. Saudi invoicing, local implementation and business entry requirements affect readiness.",
+      "nextStep": "Map retailer groups, payment partners and local implementation firms.",
+      "issue": "Official dates 9–10 Nov; third-party pages still show 17–18 Nov.",
+      "group": "seamless-saudi",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free registration advertised",
+      "organizer": "Terrapinn",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.terrapinn.com/exhibition/seamless-saudi-arabia/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.terrapinn.com/exhibition/seamless-saudi-arabia/"
+        ]
+      },
+      "logo": {
+        "path": "logos/seamless-saudi.gif",
+        "url": "https://www.terrapinn-cdn.com/logos/E11061.gif?749",
+        "sourceUrl": "https://www.terrapinn.com/exhibition/seamless-saudi-arabia/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "shop-saudi",
+      "name": "Shop Arabia KSA",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "start": "2026-11-09",
+      "end": "2026-11-10",
+      "venue": "Riyadh Front",
+      "category": "Retail & commerce",
+      "fit": "Strong",
+      "sourceIds": [
+        "s-shop-saudi"
+      ],
+      "summary": "Store fit-out, checkout, displays and immersive retail technology.",
+      "analysis": "Useful physical retail and hardware partner addition to Seamless Saudi Arabia.",
+      "nextStep": "Combine supplier meetings with the Seamless Saudi visit.",
+      "issue": "Co-located; some promotional text says three days despite the two-day date header.",
+      "group": "seamless-saudi",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "Terrapinn",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "3,000",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Page also says 3 days; header is 9–10 Nov",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm"
+        },
+        "exhibitors": {
+          "value": "125",
+          "unit": "",
+          "edition": "2026",
+          "basis": "Advertised",
+          "scope": "Page also says 3 days; header is 9–10 Nov",
+          "sourceUrl": "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm"
+        },
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm"
+        ]
+      },
+      "logo": {
+        "path": "logos/shop-saudi.gif",
+        "url": "https://terrapinn-cdn.com/exhibition/shop-arabia-ksa/Img/shop-arabia-ksa-logo.gif",
+        "sourceUrl": "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "saudi-forum",
+      "name": "Saudi Retail Forum",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "venue": "voco Riyadh",
+      "category": "Retail & commerce",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-saudi-forum"
+      ],
+      "summary": "Retail industry forum and networking programme.",
+      "analysis": "Potential group-level relationships; format is a forum, so do not assume a trade-show floor or open visitor access.",
+      "nextStep": "Check delegate access, speaker relevance and participation cost.",
+      "issue": "",
+      "group": "",
+      "kind": "Forum / networking",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "See official website",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://retailmesrf.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "Forum. Exhibition floor area and attendee total were not found on the reviewed official page.",
+        "reviewedUrls": [
+          "https://retailmesrf.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/saudi-forum.png",
+        "url": "https://retailmesrf.com/wp-content/uploads/2026/07/SRF-Logo-New-2026-copy-1024x648.png",
+        "sourceUrl": "https://retailmesrf.com/",
+        "note": "",
+        "dark": false
+      },
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "connex",
+      "name": "SEA Expo Connex",
+      "country": "Saudi Arabia",
+      "city": "Qiddiya City",
+      "start": "2026-10-21",
+      "end": "2026-10-22",
+      "venue": "Qiddiya City; programme locations require confirmation",
+      "category": "Attractions & FEC",
+      "fit": "Core",
+      "sourceIds": [
+        "s-connex"
+      ],
+      "summary": "Industry networking and educational experiences for attractions operators, developers, investors and suppliers.",
+      "analysis": "High relevance to major entertainment projects and diversified groups. Access is programme-dependent and requires checking.",
+      "nextStep": "Verify delegate conditions and the operator programme.",
+      "issue": "A separate 2026 industry event; SEA Expo trade exhibition now advertises June 2027.",
+      "group": "",
+      "kind": "Forum / networking",
+      "evidence": "Official date",
+      "cost": "Not verified",
+      "organizer": "dmg events",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.saudientertainmentexpo.com/",
+      "scale": {
+        "area": null,
+        "attendance": null,
+        "exhibitors": null,
+        "note": "Networking event. Do not reuse the 2027 SEA Expo floor area or attendance for Connex.",
+        "reviewedUrls": [
+          "https://www.saudientertainmentexpo.com/"
+        ]
+      },
+      "logo": {
+        "path": "logos/connex.png",
+        "url": "https://www.saudientertainmentexpo.com/wp-content/uploads/2026/07/Copy-of-SEA-NewsUpdates-1080x1080-36.png",
+        "sourceUrl": "https://www.saudientertainmentexpo.com/sea-connex/",
+        "note": "Exact SEA Expo Connex standalone transparent logo, visually verified.",
+        "dark": true
+      },
+      "location": {
+        "lat": 24.58,
+        "lng": 46.35,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    },
+    {
+      "id": "infocomm-india",
+      "name": "InfoComm India",
+      "country": "India",
+      "city": "Mumbai",
+      "start": "2026-09-16",
+      "end": "2026-09-18",
+      "venue": "Jio World Convention Centre",
+      "category": "AV & immersive",
+      "fit": "Adjacent",
+      "sourceIds": [
+        "s-infocomm-india",
+        "scale-infocomm-india-80"
+      ],
+      "summary": "Professional AV, integrated experiences, digital signage and technology integrators.",
+      "analysis": "Relevant partner discovery for immersive experiences and signage. India business visa preparation and the short lead time constrain attendance.",
+      "nextStep": "Check existing business visa readiness and target AV integrators.",
+      "issue": "",
+      "group": "",
+      "kind": "Exhibition",
+      "evidence": "Official date",
+      "cost": "Free show badge; some sessions charge separately",
+      "organizer": "InfoCommAsia / AVIXA ecosystem",
+      "checkedAt": "2026-09-12",
+      "deadline": "Not verified",
+      "website": "https://www.infocomm-india.com/visit-infocomm-india",
+      "scale": {
+        "area": null,
+        "attendance": {
+          "value": "12,606",
+          "unit": "",
+          "edition": "2025",
+          "basis": "Actual",
+          "scope": "Business attendees",
+          "sourceUrl": "https://www.infocomm-india.com/faq"
+        },
+        "exhibitors": null,
+        "note": "No reliable figure found in the reviewed official pages. Request the organiser prospectus or post-show report.",
+        "reviewedUrls": [
+          "https://www.infocomm-india.com/visit-infocomm-india",
+          "https://www.infocomm-india.com/faq"
+        ]
+      },
+      "logo": {
+        "path": "logos/infocomm-india.png",
+        "url": "https://cdn.asp.events/CLIENT_InfoComm_7E24A281_FE1F_C0AC_30C2FDCBA1A4EC67/sites/infocomm-india-2026/media/branding/ICIndia26-Gradient-Stamp-White-Wordmark-Lockup-Landscape.png",
+        "sourceUrl": "https://www.infocomm-india.com/visit-infocomm-india",
+        "note": "",
+        "dark": true
+      },
+      "location": {
+        "lat": 19.076,
+        "lng": 72.8777,
+        "precision": "Approximate city centre; not the exhibition venue"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-atm",
+      "name": "Arabian Travel Market / ATM Travel Tech · official website",
+      "url": "https://www.wtm.com/atm/en-gb.html",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Travel trade and travel technology; destination, accommodation and distribution businesses.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-shop-dubai",
+      "name": "Shop Arabia · official website",
+      "url": "https://www.terrapinn.com/exhibition/shop-arabia/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Physical retail: store fit-out, digital signage, checkout and immersive in-store technology. 2026: 125  (Advertised; ).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-commerce-dubai",
+      "name": "Seamless Digital Commerce · official website",
+      "url": "https://www.terrapinn.com/exhibition/seamless-middle-east/index.stm",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Retail, ecommerce, marketing, payments and the digital customer journey.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-fintech-dubai",
+      "name": "Seamless Fintech · official website",
+      "url": "https://www.terrapinn.com/exhibition/seamless-middle-east-fintech/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Fintech and payments ecosystem, including financial institutions and technology suppliers. 2026: 20,000  (Advertised; Co-located audience may overlap). 2026: 750  (Advertised; Co-located audience may overlap).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-gitex",
+      "name": "GITEX GLOBAL · official website",
+      "url": "https://www.gitex.com/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Large enterprise technology, AI and digital transformation exhibition.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-cabsat",
+      "name": "CABSAT · official website",
+      "url": "https://cabsat.com/plan-your-visit",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Broadcast, content production and professional AV; new Expo City venue.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-sgi",
+      "name": "SGI MENA (formerly SGI Dubai) · official website",
+      "url": "https://www.signmiddleeast.com/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Signage, printing, LED, digital displays, professional audio and lighting.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-active",
+      "name": "Dubai Active Industry · official website",
+      "url": "https://dubaiactiveindustry.com/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Fitness and wellness business exhibition with operator, technology and industry content. 2026: 35,000 m² (Advertised; Event portfolio; net/gross unspecified). 2026: 40,000 / 45,000  (Conflicting claims; Portfolio / consumer + trade; brands, not companies). 2026: 450+  (Conflicting claims; Portfolio / consumer + trade; brands, not companies).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-taape",
+      "name": "TAAPE · official website",
+      "url": "https://www.taapeexpo.com/",
+      "kind": "Event website",
+      "scope": "Thailand",
+      "summary": "Amusement parks, family entertainment, attractions, water parks and related equipment.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-digitech",
+      "name": "DigiTech ASEAN Thailand & AI Connect · official website",
+      "url": "https://digitechasean.com/",
+      "kind": "Event website",
+      "scope": "Thailand",
+      "summary": "Enterprise software, digital services, AI, IoT and business technology.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-seashop",
+      "name": "SEA SHOP / SAVM · official website",
+      "url": "https://en.aisacve.com/",
+      "kind": "Event website",
+      "scope": "Malaysia",
+      "summary": "Retail equipment, vending and self-service facilities. 2026: 10,000  (Unit unconfirmed; Source omits area unit; joint shows). 2026: 20,000  (Advertised; edition unclear; SEA SHOP + SAVM + RTSE). 2026: 300+  (Advertised; edition unclear; SEA SHOP + SAVM + RTSE).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-techweek",
+      "name": "Tech Week Singapore · official website",
+      "url": "https://www.singaporetechnologyweek.com/",
+      "kind": "Event website",
+      "scope": "Singapore",
+      "summary": "Co-located cloud, AI, data, cybersecurity and infrastructure technology events. 2026: 29,000+  (Advertised benchmark; Five co-located shows combined). 2026: 500+  (Advertised benchmark; Five co-located shows combined).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-itb",
+      "name": "ITB Asia / Travel Tech Asia · official website",
+      "url": "https://www.traveltechasia.com/",
+      "kind": "Event website",
+      "scope": "Singapore",
+      "summary": "Travel trade and technology alongside ITB Asia and MICE Show Asia.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-sff",
+      "name": "Singapore FinTech Festival · official website",
+      "url": "https://www.fintechfestival.sg/",
+      "kind": "Event website",
+      "scope": "Singapore",
+      "summary": "Financial technology, payment networks and financial services innovation. Unspecified: 70,000+  (Advertised benchmark; Homepage mixes 2025 / 2026 content).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-inashop",
+      "name": "INA SHOP EXPO · official website",
+      "url": "https://inashopexpo.co.id/",
+      "kind": "Event website",
+      "scope": "Indonesia",
+      "summary": "Retail equipment and technology exhibition organised by Krista. Official indexed information was available; full page text was not reliably readable.",
+      "access": "Index only",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-raapa",
+      "name": "RAAPA EXPO AUTUMN · official website",
+      "url": "https://raapa-expo.ru/",
+      "kind": "Event website",
+      "scope": "Russia",
+      "summary": "Amusement attractions, parks and family entertainment equipment; industry automation content.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-leisure-japan",
+      "name": "Leisure Japan · official website",
+      "url": "https://leisure-japan.jp/en/",
+      "kind": "Event website",
+      "scope": "Japan",
+      "summary": "Leisure facilities, attractions, entertainment and related operational solutions. 2025: 21,107  (Actual; Visitor total; repeat-visit basis unspecified).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-iaapa-europe",
+      "name": "IAAPA Expo Europe · official website",
+      "url": "https://iaapa.org/expos-and-events/expo-europe",
+      "kind": "Event website",
+      "scope": "United Kingdom",
+      "summary": "European attractions industry exhibition for operators and suppliers.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-llt",
+      "name": "Land Leisure & Tourism Show · official website",
+      "url": "https://www.lltshow.com/",
+      "kind": "Event website",
+      "scope": "United Kingdom",
+      "summary": "Visitor attractions, holiday parks, land diversification and experience businesses. 2026: 200+  (Advertised; ).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-wtm",
+      "name": "WTM London / WTM Travel Tech · official website",
+      "url": "https://www.wtm.com/london/en-gb/travel-tech.html",
+      "kind": "Event website",
+      "scope": "United Kingdom",
+      "summary": "Travel technology exhibition alongside the international travel trade show.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-iaapa-us",
+      "name": "IAAPA Expo · official website",
+      "url": "https://iaapa.org/expos-and-events/iaapa-expo",
+      "kind": "Event website",
+      "scope": "United States",
+      "summary": "Major international attractions and amusement industry trade show.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-wwa",
+      "name": "WWA Symposium & Trade Show · official website",
+      "url": "https://www.wwashow.org/the-show-venue/",
+      "kind": "Event website",
+      "scope": "United States",
+      "summary": "Waterpark operator and supplier event with education and trade exhibition.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-mapic",
+      "name": "MAPIC / LeisurUp · official website",
+      "url": "https://www.mapic.com/en-gb/what-is-mapic/leisurup-by-mapic.html",
+      "kind": "Event website",
+      "scope": "France",
+      "summary": "Retail property, leisure operators and entertainment-led destinations.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-nrf-europe",
+      "name": "NRF Retail’s Big Show Europe · official website",
+      "url": "https://www.nrfbigshoweurope.com/",
+      "kind": "Event website",
+      "scope": "France",
+      "summary": "Retail technology, operations and store innovation.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-interbad",
+      "name": "interbad · official website",
+      "url": "https://www.messe-stuttgart.de/interbad/en/fair/at-a-glance/",
+      "kind": "Event website",
+      "scope": "Germany",
+      "summary": "Swimming pools, sauna, spa and technologies for operators, builders and planners.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-inout",
+      "name": "InOut | The Hospitality Community · official website",
+      "url": "https://www.inoutexpo.it/en",
+      "kind": "Event website",
+      "scope": "Italy",
+      "summary": "Hospitality technology, pools, camping, sports and entertainment; co-located with TTG.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-aaa",
+      "name": "AAAEXPO Africa Amusement & Attractions · official website",
+      "url": "https://www.aaaexpo.ma/",
+      "kind": "Event website",
+      "scope": "Morocco",
+      "summary": "New Africa-focused amusement, attractions and leisure industry exhibition. 2026: 10,000+  (Forecast; First edition targets). 2026: 100+  (Forecast; First edition targets).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-vifs",
+      "name": "Vietnam International Franchise Show (VIFS) · official website",
+      "url": "https://vietfranchise.vn/",
+      "kind": "Event website",
+      "scope": "Vietnam",
+      "summary": "Franchise, retail and chain business event, formerly VIETRF.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-saudi-retail",
+      "name": "Saudi Retail Show · official website",
+      "url": "https://saudiretailshow.com/ar",
+      "kind": "Event website",
+      "scope": "Saudi Arabia",
+      "summary": "Retail, customer experience, digital transformation and omnichannel commerce. Official indexed information was available; full page text was not reliably readable.",
+      "access": "Index only",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-seamless-saudi",
+      "name": "Seamless Saudi Arabia · official website",
+      "url": "https://www.terrapinn.com/exhibition/seamless-saudi-arabia/",
+      "kind": "Event website",
+      "scope": "Saudi Arabia",
+      "summary": "Digital commerce, payments, POS, loyalty and omnichannel retail.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-shop-saudi",
+      "name": "Shop Arabia KSA · official website",
+      "url": "https://www.terrapinn.com/exhibition/shop-arabia-ksa/index.stm",
+      "kind": "Event website",
+      "scope": "Saudi Arabia",
+      "summary": "Store fit-out, checkout, displays and immersive retail technology. 2026: 3,000  (Advertised; Page also says 3 days; header is 9–10 Nov). 2026: 125  (Advertised; Page also says 3 days; header is 9–10 Nov).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-saudi-forum",
+      "name": "Saudi Retail Forum · official website",
+      "url": "https://retailmesrf.com/",
+      "kind": "Event website",
+      "scope": "Saudi Arabia",
+      "summary": "Retail industry forum and networking programme.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-connex",
+      "name": "SEA Expo Connex · official website",
+      "url": "https://www.saudientertainmentexpo.com/",
+      "kind": "Event website",
+      "scope": "Saudi Arabia",
+      "summary": "Industry networking and educational experiences for attractions operators, developers, investors and suppliers.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "s-infocomm-india",
+      "name": "InfoComm India · official website",
+      "url": "https://www.infocomm-india.com/visit-infocomm-india",
+      "kind": "Event website",
+      "scope": "India",
+      "summary": "Professional AV, integrated experiences, digital signage and technology integrators.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "v-united-arab-emirates",
+      "name": "United Arab Emirates · entry requirements",
+      "url": "https://ae.china-embassy.gov.cn/chn/lsyw/zytz/202504/t20250414_11594207.htm",
+      "kind": "Entry authority",
+      "scope": "United Arab Emirates",
+      "summary": "Passport validity at least six months. Carry evidence matching the business visit; paid work or booth installation may require a different permission.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-thailand",
+      "name": "Thailand · entry requirements",
+      "url": "https://th.china-embassy.gov.cn/sgxw/202609/t20260902_12014753.html",
+      "kind": "Entry authority",
+      "scope": "Thailand",
+      "summary": "For the October and November shows use the new 30-day rule, not the former 60-day allowance. Check arrival declaration requirements before departure.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-malaysia",
+      "name": "Malaysia · entry requirements",
+      "url": "https://www.kln.gov.my/web/chn_beijing/requirement_foreigner",
+      "kind": "Entry authority",
+      "scope": "Malaysia",
+      "summary": "Mutual exemption effective 17 July 2025 includes eligible short business visits. Arrival formalities and work restrictions remain separate.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-singapore",
+      "name": "Singapore · entry requirements",
+      "url": "https://www.ica.gov.sg/news-and-publications/newsroom/media-release/mutual-30-day-visa-exemption-arrangement-between-singapore-and-the-people-s-republic-of-china",
+      "kind": "Entry authority",
+      "scope": "Singapore",
+      "summary": "Chinese ordinary passport holders qualify. Check SG Arrival Card and permitted short business activities separately from paid work.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-indonesia",
+      "name": "Indonesia · entry requirements",
+      "url": "https://id.china-embassy.gov.cn/chn/gdxw/202508/t20250830_11698830.htm",
+      "kind": "Entry authority",
+      "scope": "Indonesia",
+      "summary": "Business exhibition visitors and exhibitors are distinct. Chinese embassy guidance says exhibiting requires C11; do not use a visitor VOA to staff a booth.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-russia",
+      "name": "Russia · entry requirements",
+      "url": "https://ru.china-embassy.gov.cn/lsfw/zytz_142816/202607/t20260721_11989093.htm",
+      "kind": "Entry authority",
+      "scope": "Russia",
+      "summary": "The July 2026 notice extends the policy beyond the previously stated September 2026 expiry. Confirm permitted business activities and travel/payment arrangements separately.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-japan",
+      "name": "Japan · entry requirements",
+      "url": "https://www.shanghai.cn.emb-japan.go.jp/itpr_zh/00_000906.html",
+      "kind": "Entry authority",
+      "scope": "Japan",
+      "summary": "Invitation and supporting company documents normally required; apply through the designated channel for your consular district. No approval rate or fixed processing promise is assumed.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-morocco",
+      "name": "Morocco · entry requirements",
+      "url": "https://ma.china-embassy.gov.cn/lsfw/zytz/202507/t20250716_11671271.htm",
+      "kind": "Entry authority",
+      "scope": "Morocco",
+      "summary": "Prepare passport, return travel, accommodation and business invitation evidence. Chinese embassy flags problems on some Schengen transit routes; plan the routing as well as entry.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-vietnam",
+      "name": "Vietnam · entry requirements",
+      "url": "https://evisa.immigration.gov.vn/trang-chu-ttdt",
+      "kind": "Entry authority",
+      "scope": "Vietnam",
+      "summary": "Electronic visa applications are available to all nationalities. Use the official portal and select the actual purpose, entry point and dates; confirm exhibitor/work activities separately.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-saudi-arabia",
+      "name": "Saudi Arabia · entry requirements",
+      "url": "https://visa.visitsaudi.com/Home/TermsConditions",
+      "kind": "Entry authority",
+      "scope": "Saudi Arabia",
+      "summary": "China is on the tourist eVisa eligibility list. That establishes an easy tourism route, not blanket permission for commercial exhibiting; confirm the correct business/event visa for the planned role.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-united-kingdom",
+      "name": "United Kingdom · entry requirements",
+      "url": "https://www.gov.uk/standard-visitor/visit-on-business",
+      "kind": "Entry authority",
+      "scope": "United Kingdom",
+      "summary": "Apply before travel if required. Meetings and conferences are permitted; prepare purpose, funding and return evidence and an event invitation. China ordinary passport baseline does not assume an existing UK visa.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-united-states",
+      "name": "United States · entry requirements",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html",
+      "kind": "Entry authority",
+      "scope": "United States",
+      "summary": "Business conferences fall under the visitor route. Application, appointment/interview requirements and eligibility need planning. Check EVUS when using an applicable Chinese 10-year B visa.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-france",
+      "name": "France · entry requirements",
+      "url": "https://france-visas.gouv.fr/en/web/france-visas/voyage-d-affaires",
+      "kind": "Entry authority",
+      "scope": "France",
+      "summary": "Trade fairs and conferences qualify as business travel. Purpose, finances, travel insurance and application/biometric requirements apply; use the correct main-destination consulate.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-germany",
+      "name": "Germany · entry requirements",
+      "url": "https://china.diplo.de/cn-de/service/visa-einreise/2703034-2703034",
+      "kind": "Entry authority",
+      "scope": "Germany",
+      "summary": "German missions in China publish a business-trip checklist. Invitation and employment/financial evidence plus the relevant application formalities are required.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-italy",
+      "name": "Italy · entry requirements",
+      "url": "https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en",
+      "kind": "Entry authority",
+      "scope": "Italy",
+      "summary": "Schengen business route; verify the Italy-specific document checklist and appointment channel for the applicant residence. Country checklist remains to be checked.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "v-india",
+      "name": "India · entry requirements",
+      "url": "https://www.eoibeijing.gov.in/page/business-visa-sports-visa/",
+      "kind": "Entry authority",
+      "scope": "India",
+      "summary": "Chinese nationals should follow the Indian mission business visa checklist, including invitation and company evidence. Do not assume general tourist eVisa eligibility covers a trade-fair business trip.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "dir-iaapa",
+      "name": "IAAPA · global calendar",
+      "url": "https://iaapa.org/expos-and-events/events-calendar",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Discover attraction events, then distinguish exhibitions from courses, tours and workshops.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "dir-tea",
+      "name": "TEA · major trade gatherings",
+      "url": "https://www.teaconnect.org/major-trade-gatherings",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Themed entertainment trade gatherings; useful cross-check for IAAPA, MAPIC and AV events.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "dir-raapa",
+      "name": "RAAPA · international calendar",
+      "url": "https://raapa.ru/en/activity/international/",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Cross-market amusement and leisure exhibition discovery. Verify year and floor dates at each organiser.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "dir-rli",
+      "name": "Retail & Leisure International · events",
+      "url": "https://www.rli.uk.com/events/",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Retail, property and leisure events. Networking-only events should remain visibly distinct.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "dir-balppa",
+      "name": "BALPPA · event calendar",
+      "url": "https://www.balppa.org/events/balppa-events-calendar/",
+      "kind": "Industry directory",
+      "scope": "United Kingdom",
+      "summary": "UK attraction association calendar; member meetings and training are not automatically exhibition opportunities.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "dir-aa",
+      "name": "Amusements & Attractions · events",
+      "url": "https://www.amusementsandattractions.com/events",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Secondary discovery source. Dynamic event list was not fully readable in the research reader.",
+      "access": "Partial access",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "dir-thai",
+      "name": "Thailand Exhibition Association",
+      "url": "https://www.thaiexhibition.or.th/",
+      "kind": "Local directory",
+      "scope": "Thailand",
+      "summary": "Local calendar cross-check for dates and halls, including TAAPE.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "dir-dubai",
+      "name": "Dubai Media Office · year-end DWTC calendar",
+      "url": "https://prod.mediaoffice.ae/en/news/2026/august/19-08/dwtc-announces-diverse-events-calendar-across-two-venues-through-year-end-2026",
+      "kind": "Local directory",
+      "scope": "United Arab Emirates",
+      "summary": "Official two-venue calendar for additional UAE discovery. Cybersecurity-only and consumer shows are not prioritised.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "dir-dec",
+      "name": "Dubai Exhibition Centre · what is on",
+      "url": "https://www.dubaiexhibitioncentre.com/en/whats-on",
+      "kind": "Local directory",
+      "scope": "United Arab Emirates",
+      "summary": "Venue-level discovery and location cross-check. Individual organiser pages remain the date authority.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "nrf-release",
+      "name": "NRF Europe · 2026 launch release",
+      "url": "https://www.nrfbigshoweurope.com/-/media/Files/NRF-PDF-M1/presse/ENPR-Launch-NRF-Retails-Big-Show2502.pdf?rev=2caeb821080b4e3bb96c43df2000e039",
+      "kind": "Event website",
+      "scope": "France",
+      "summary": "26 February 2026 release explicitly gives Paris 15–17 September 2026.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "nrf-conflict",
+      "name": "NRF · global network directory",
+      "url": "https://nrf.com/events/globalnetwork",
+      "kind": "Industry directory",
+      "scope": "Global",
+      "summary": "Directory lists Europe 17–19 September 2026, conflicting with the dedicated 2026 release.",
+      "access": "Conflicting details",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "sgi-old",
+      "name": "SGI · older directory listing",
+      "url": "https://www.specialistprinting.com/events/e-494-sgi-dubai-2026/",
+      "kind": "Industry directory",
+      "scope": "United Arab Emirates",
+      "summary": "Still lists 28–30 September. Superseded in this snapshot by the organiser December dates.",
+      "access": "Conflicting details",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "itb-main",
+      "name": "ITB Asia · official website",
+      "url": "https://www.itb-asia.com/",
+      "kind": "Event website",
+      "scope": "Singapore",
+      "summary": "Cross-check ITB Asia alongside Travel Tech Asia and MICE Show Asia.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 7
+    },
+    {
+      "id": "visa-vn-all",
+      "name": "Vietnam Tourism · e-visa eligibility",
+      "url": "https://vietnam.travel/th/node/534",
+      "kind": "Entry authority",
+      "scope": "Vietnam",
+      "summary": "All countries and territories can apply for a Vietnamese e-visa; up to 90 days.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "visa-ma-business",
+      "name": "Chinese Embassy Morocco · business entry evidence",
+      "url": "https://ma.china-embassy.gov.cn/lsfw/lsbh/aqtxlstx/202403/t20240322_11266442.htm",
+      "kind": "Entry authority",
+      "scope": "Morocco",
+      "summary": "Short business visitors should carry an invitation and evidence matching the purpose of entry.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 14
+    },
+    {
+      "id": "excluded-0",
+      "name": "GTI Southeast Asia Expo · scope check",
+      "url": "https://www.gtisoutheastasiaexpo.com/",
+      "kind": "Scope check",
+      "scope": "Malaysia",
+      "summary": "2026 edition was 21–23 April, outside September–December.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "excluded-1",
+      "name": "Theme Park Expo Vietnam · scope check",
+      "url": "https://themeparkvietnam.com/",
+      "kind": "Scope check",
+      "scope": "Vietnam",
+      "summary": "2026 edition was 26–27 August, outside the window.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "excluded-2",
+      "name": "IAAPA Expo Asia · scope check",
+      "url": "https://iaapa.org/about/press-room/press-release-iaapa-expo-asia-2026-opens-in-hong-kong",
+      "kind": "Scope check",
+      "scope": "China · Hong Kong",
+      "summary": "June 2026 edition; outside this international September–December window.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "excluded-3",
+      "name": "IAAPA Expo Middle East · scope check",
+      "url": "https://iaapa.org/expos-and-events",
+      "kind": "Scope check",
+      "scope": "United Arab Emirates",
+      "summary": "Official current calendar points to 12–15 April 2027; do not treat older 2026 dates as a live opportunity.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "excluded-5",
+      "name": "The Hotel Show Dubai · scope check",
+      "url": "https://www.thehotelshow.com/",
+      "kind": "Scope check",
+      "scope": "United Arab Emirates",
+      "summary": "Current official website advertises 1–3 June 2027; earlier September 2026 listings are not used.",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-atm-70",
+      "name": "Arabian Travel Market / ATM Travel Tech · scale evidence",
+      "url": "https://www.wtm.com/portfolio/en-gb/blog/press-releases/atm25-uniting-global-travel-experts.html",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2025: 55,000+  (Forecast; Whole ATM; not Travel Tech only). 2025: 2,800+  (Forecast; Whole ATM; not Travel Tech only).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-commerce-dubai-71",
+      "name": "Seamless Digital Commerce · scale evidence",
+      "url": "https://www.terrapinn.com/exhibition/seamless-middle-east/",
+      "kind": "Event website",
+      "scope": "United Arab Emirates",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2026: 20,000  (Advertised; Co-located audience may overlap). 2026: 750  (Advertised; Co-located audience may overlap).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-digitech-72",
+      "name": "DigiTech ASEAN Thailand & AI Connect · scale evidence",
+      "url": "https://digitechasean.com/overview/",
+      "kind": "Event website",
+      "scope": "Thailand",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2026: 10,000 m² (Advertised; With AI Connect; net/gross unspecified). 2026: 12,000  (Advertised; With AI Connect). 2026: 400  (Advertised; With AI Connect).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-itb-73",
+      "name": "ITB Asia / Travel Tech Asia · scale evidence",
+      "url": "https://www.itb-asia.com/resources/ck/files/Exhibit/Collective-Brochure-2026.pdf",
+      "kind": "Event website",
+      "scope": "Singapore",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2026: 18,000+  (Advertised; Whole ITB Asia; not Travel Tech only). 2026: 1,000+  (Advertised; Whole ITB Asia; not Travel Tech only).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-iaapa-europe-74",
+      "name": "IAAPA Expo Europe · scale evidence",
+      "url": "https://iaapa.org/about/press-room/press-release-expo-europe-2025-concludes-barcelona-spain",
+      "kind": "Event website",
+      "scope": "United Kingdom",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2025: 20,700 m² (Actual; Barcelona edition; exhibition space). 2025: 15,877  (Actual; Barcelona edition; verified attendees). 2025: 700+  (Actual; Barcelona edition; verified attendees).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-wtm-75",
+      "name": "WTM London / WTM Travel Tech · scale evidence",
+      "url": "https://www.wtm.com/london/en-gb.html?Country=ANGOLA",
+      "kind": "Event website",
+      "scope": "United Kingdom",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. Unspecified: 46,000+  (Advertised benchmark; Whole WTM; not Travel Tech only). Unspecified: 4,000+  (Advertised benchmark; Whole WTM; not Travel Tech only).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-iaapa-us-76",
+      "name": "IAAPA Expo · scale evidence",
+      "url": "https://iaapa.org/about/press-room/press-release-iaapa-expo-2025-conclues-with-record-breaking-attendance",
+      "kind": "Event website",
+      "scope": "United States",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2025: 565,000+ ft² (Actual; Exhibition space; net/gross unspecified). 2025: 38,520  (Actual; Verified attendees). 2025: 1,100+  (Actual; Verified attendees).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-wwa-77",
+      "name": "WWA Symposium & Trade Show · scale evidence",
+      "url": "https://www.wwashow.org/wp-content/uploads/2026/05/2026-ExhibitorBrochure-LasVegas.pdf",
+      "kind": "Event website",
+      "scope": "United States",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2026: 200+ companies (Advertised; 350+ booths; booth count is not company count).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-nrf-europe-78",
+      "name": "NRF Retail’s Big Show Europe · scale evidence",
+      "url": "https://www.nrfbigshoweurope.com/en/campaigns/pmax-paid-acquisition-visiteur-en",
+      "kind": "Event website",
+      "scope": "France",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2025: 15,000+  (Forecast; 2025 campaign; not 2026 actual attendance).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-interbad-79",
+      "name": "interbad · scale evidence",
+      "url": "https://www.messe-stuttgart.de/interbad/en/fair/review/review-2024/",
+      "kind": "Event website",
+      "scope": "Germany",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2024: ≈8,000  (Actual; Nearly 8,000 visitors). 2024: 276  (Actual; Nearly 8,000 visitors).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    },
+    {
+      "id": "scale-infocomm-india-80",
+      "name": "InfoComm India · scale evidence",
+      "url": "https://www.infocomm-india.com/faq",
+      "kind": "Event website",
+      "scope": "India",
+      "summary": "Published size / participation figures. Preserve the stated edition, basis and co-located scope. 2025: 12,606  (Actual; Business attendees).",
+      "access": "Reviewed",
+      "checkedAt": "2026-09-12",
+      "reviewDays": 30
+    }
+  ],
+  "visas": [
+    {
+      "country": "United Arab Emirates",
+      "tier": "Visa-free",
+      "route": "Ordinary passport exemption",
+      "stay": "Up to 90 days per 180 days",
+      "notes": "Passport validity at least six months. Carry evidence matching the business visit; paid work or booth installation may require a different permission.",
+      "sourceIds": [
+        "v-united-arab-emirates"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Thailand",
+      "tier": "Visa-free",
+      "route": "Ordinary passport exemption",
+      "stay": "30 days per visit from 15 Sep 2026; 90/180 cap",
+      "notes": "For the October and November shows use the new 30-day rule, not the former 60-day allowance. Check arrival declaration requirements before departure.",
+      "sourceIds": [
+        "v-thailand"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Malaysia",
+      "tier": "Visa-free",
+      "route": "Mutual exemption",
+      "stay": "30 days per visit; 90 per 180 days",
+      "notes": "Mutual exemption effective 17 July 2025 includes eligible short business visits. Arrival formalities and work restrictions remain separate.",
+      "sourceIds": [
+        "v-malaysia"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Singapore",
+      "tier": "Visa-free",
+      "route": "Mutual exemption",
+      "stay": "Up to 30 days",
+      "notes": "Chinese ordinary passport holders qualify. Check SG Arrival Card and permitted short business activities separately from paid work.",
+      "sourceIds": [
+        "v-singapore"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Indonesia",
+      "tier": "Electronic / conditional",
+      "route": "B1 visitor eVOA; C11 for exhibitors",
+      "stay": "B1 normally 30 days",
+      "notes": "Business exhibition visitors and exhibitors are distinct. Chinese embassy guidance says exhibiting requires C11; do not use a visitor VOA to staff a booth.",
+      "sourceIds": [
+        "v-indonesia"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Russia",
+      "tier": "Visa-free",
+      "route": "Temporary ordinary passport exemption",
+      "stay": "Up to 30 days; exemption extended to 31 Dec 2027",
+      "notes": "The July 2026 notice extends the policy beyond the previously stated September 2026 expiry. Confirm permitted business activities and travel/payment arrangements separately.",
+      "sourceIds": [
+        "v-russia"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Japan",
+      "tier": "Advance application",
+      "route": "Short-term business visa",
+      "stay": "As issued",
+      "notes": "Invitation and supporting company documents normally required; apply through the designated channel for your consular district. No approval rate or fixed processing promise is assumed.",
+      "sourceIds": [
+        "v-japan"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Morocco",
+      "tier": "Visa-free",
+      "route": "Ordinary passport exemption",
+      "stay": "Up to 90 days",
+      "notes": "Prepare passport, return travel, accommodation and business invitation evidence. Chinese embassy flags problems on some Schengen transit routes; plan the routing as well as entry.",
+      "sourceIds": [
+        "v-morocco",
+        "visa-ma-business"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Vietnam",
+      "tier": "Electronic / conditional",
+      "route": "Official e-visa application",
+      "stay": "Up to 90 days, single or multiple entry",
+      "notes": "Electronic visa applications are available to all nationalities. Use the official portal and select the actual purpose, entry point and dates; confirm exhibitor/work activities separately.",
+      "sourceIds": [
+        "v-vietnam",
+        "visa-vn-all"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Saudi Arabia",
+      "tier": "Electronic / conditional",
+      "route": "Tourist eVisa eligibility; business purpose check",
+      "stay": "Tourist eVisa up to 90 days; verify granted terms",
+      "notes": "China is on the tourist eVisa eligibility list. That establishes an easy tourism route, not blanket permission for commercial exhibiting; confirm the correct business/event visa for the planned role.",
+      "sourceIds": [
+        "v-saudi-arabia"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "United Kingdom",
+      "tier": "More involved",
+      "route": "Standard Visitor for permitted business activities",
+      "stay": "As granted, normally up to six months",
+      "notes": "Apply before travel if required. Meetings and conferences are permitted; prepare purpose, funding and return evidence and an event invitation. China ordinary passport baseline does not assume an existing UK visa.",
+      "sourceIds": [
+        "v-united-kingdom"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "United States",
+      "tier": "More involved",
+      "route": "B-1 / B-1/B-2 business visitor",
+      "stay": "Admission determined at entry",
+      "notes": "Business conferences fall under the visitor route. Application, appointment/interview requirements and eligibility need planning. Check EVUS when using an applicable Chinese 10-year B visa.",
+      "sourceIds": [
+        "v-united-states"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "France",
+      "tier": "More involved",
+      "route": "Schengen short-stay business visa",
+      "stay": "Up to 90 days per 180 days, within visa conditions",
+      "notes": "Trade fairs and conferences qualify as business travel. Purpose, finances, travel insurance and application/biometric requirements apply; use the correct main-destination consulate.",
+      "sourceIds": [
+        "v-france"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Germany",
+      "tier": "More involved",
+      "route": "Schengen short-stay business visa",
+      "stay": "Up to 90 days per 180 days, within visa conditions",
+      "notes": "German missions in China publish a business-trip checklist. Invitation and employment/financial evidence plus the relevant application formalities are required.",
+      "sourceIds": [
+        "v-germany"
+      ],
+      "checkedAt": "2026-09-12"
+    },
+    {
+      "country": "Italy",
+      "tier": "More involved",
+      "route": "Schengen short-stay business visa",
+      "stay": "Up to 90 days per 180 days, within visa conditions",
+      "notes": "Schengen business route; verify the Italy-specific document checklist and appointment channel for the applicant residence. Country checklist remains to be checked.",
+      "sourceIds": [
+        "v-italy"
+      ],
+      "checkedAt": "2026-09-12",
+      "evidence": "General Schengen rule; Italy checklist pending"
+    },
+    {
+      "country": "India",
+      "tier": "Advance application",
+      "route": "Business visa via Indian mission / authorised channel",
+      "stay": "As issued",
+      "notes": "Chinese nationals should follow the Indian mission business visa checklist, including invitation and company evidence. Do not assume general tourist eVisa eligibility covers a trade-fair business trip.",
+      "sourceIds": [
+        "v-india"
+      ],
+      "checkedAt": "2026-09-12"
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "GTI Southeast Asia Expo",
+      "country": "Malaysia",
+      "reason": "2026 edition was 21–23 April, outside September–December.",
+      "url": "https://www.gtisoutheastasiaexpo.com/",
+      "sourceIds": [
+        "excluded-0"
+      ]
+    },
+    {
+      "name": "Theme Park Expo Vietnam",
+      "country": "Vietnam",
+      "reason": "2026 edition was 26–27 August, outside the window.",
+      "url": "https://themeparkvietnam.com/",
+      "sourceIds": [
+        "excluded-1"
+      ]
+    },
+    {
+      "name": "IAAPA Expo Asia",
+      "country": "China · Hong Kong",
+      "reason": "June 2026 edition; outside this international September–December window.",
+      "url": "https://iaapa.org/about/press-room/press-release-iaapa-expo-asia-2026-opens-in-hong-kong",
+      "sourceIds": [
+        "excluded-2"
+      ]
+    },
+    {
+      "name": "IAAPA Expo Middle East",
+      "country": "United Arab Emirates",
+      "reason": "Official current calendar points to 12–15 April 2027; do not treat older 2026 dates as a live opportunity.",
+      "url": "https://iaapa.org/expos-and-events",
+      "sourceIds": [
+        "excluded-3"
+      ]
+    },
+    {
+      "name": "SEA Expo trade exhibition",
+      "country": "Saudi Arabia",
+      "reason": "Current organiser homepage advertises 1–3 June 2027. SEA Expo Connex in October 2026 is recorded separately as a networking event.",
+      "url": "https://www.saudientertainmentexpo.com/",
+      "sourceIds": [
+        "s-connex"
+      ]
+    },
+    {
+      "name": "The Hotel Show Dubai",
+      "country": "United Arab Emirates",
+      "reason": "Current official website advertises 1–3 June 2027; earlier September 2026 listings are not used.",
+      "url": "https://www.thehotelshow.com/",
+      "sourceIds": [
+        "excluded-5"
+      ]
+    },
+    {
+      "name": "InfoComm Asia",
+      "country": "Thailand",
+      "reason": "15–17 July 2026, outside the requested window.",
+      "url": "https://www.infocomm-india.com/visit-infocomm-india",
+      "sourceIds": [
+        "s-infocomm-india"
+      ]
+    },
+    {
+      "name": "September ASEAN vending listing",
+      "country": "Malaysia",
+      "reason": "Potential separate 10–12 September event; reliable organiser confirmation not obtained. Do not merge it into the November SEA SHOP / SAVM record.",
+      "url": "https://raapa.ru/en/activity/international/",
+      "sourceIds": [
+        "dir-raapa"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "region": "Gulf",
+      "status": "Expanded",
+      "detail": "UAE and Saudi organiser/venue calendars reviewed. Bahrain, Qatar, Oman and Kuwait need a dedicated sweep."
+    },
+    {
+      "region": "Southeast Asia",
+      "status": "Expanded",
+      "detail": "Thailand, Singapore, Malaysia, Indonesia and Vietnam reviewed. Philippines, Cambodia and other markets remain to be expanded."
+    },
+    {
+      "region": "Europe & North America",
+      "status": "Selective",
+      "detail": "Core IAAPA, WWA, MAPIC, retail, leisure and pool events included. This is not a complete country-by-country European or US calendar."
+    },
+    {
+      "region": "Japan, Russia, Morocco & India",
+      "status": "Selective",
+      "detail": "Specific relevant events and entry routes reviewed. Morocco first-edition details need follow-up."
+    },
+    {
+      "region": "Other markets",
+      "status": "Open gap",
+      "detail": "Australia/New Zealand, Korea, Turkey, Central Asia, Latin America and most of Africa have not had a complete September–December sweep."
+    }
+  ],
+  "method": "Public-source research snapshot, not a live feed. Facts are paraphrased extracts; fit and next steps are analyst judgements, not organiser claims. An official date means published, not guaranteed to take place. No global completeness claim. Chinese ordinary passport baseline; no existing foreign visas assumed. Visa difficulty is a planning category, not an approval probability. All dates are local show dates. Booth prices, deadlines, buyer quality and work permissions require separate confirmation.",
+  "changes": [
+    {
+      "date": "2026-09-12",
+      "title": "SGI date corrected",
+      "detail": "Official December 7–9 replaces older September 28–30 listings. Both sources are retained."
+    },
+    {
+      "date": "2026-09-12",
+      "title": "SEA Expo and Connex separated",
+      "detail": "Trade expo is now advertised for June 2027; October 2026 Connex remains a separate networking opportunity."
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Russia visa expiry corrected",
+      "detail": "July 2026 official notice extends the ordinary passport exemption to December 31, 2027."
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Show-floor dates separated",
+      "detail": "IAAPA Europe, IAAPA Orlando, RAAPA and WWA use trade-floor dates, not longer education programmes."
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Thailand rule effective September 15",
+      "detail": "October/November trips use the new 30-day allowance, rather than the older 60-day rule."
+    }
+  ]
+}
