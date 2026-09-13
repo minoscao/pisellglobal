@@ -1,4 +1,5 @@
 import {loadGoogleMaps,PISELL_MAP_STYLE} from './google-maps.js';
+import {FOOTPRINT_LEVELS,footprintLevel} from './config.js';
 let boundaries;
 const aliases={'United States of America':'United States'};
 const nameOf=f=>aliases[f.getProperty('name')]||f.getProperty('name');
@@ -10,12 +11,16 @@ export async function mountFootprint({target,api,projects,regions,selected,showD
  for(const f of geo.features){const name=aliases[f.properties.name]||f.properties.name;if(!countries.has(name))countries.set(name,{country:name,projects:null,leads:null,leadVenueIds:[],coverage:null});}
  const countText=n=>n==null?'Not available':String(n);
  const panel=target.closest('.map-panel');panel.querySelector('[data-footprint-summary]').textContent=`${projects.length} existing projects · ${research.countries.reduce((n,r)=>n+(r.leads||0),0)} leads / opportunities`;
- const shade=r=>r?.projects>0?{fillOpacity:Math.min(.78,.42+Math.log2(r.projects+1)*.08),strokeWeight:1.2}:r?.leads>0?{fillOpacity:.22,strokeWeight:1}:{fillOpacity:0,strokeWeight:0};
+ const metricControl=panel.querySelector('[data-footprint-metric]');
+ let metric=sessionStorage.getItem('pisell-footprint-metric')==='leads'?'leads':'projects';metricControl.value=metric;
+ panel.querySelector('[data-footprint-legend]').innerHTML=FOOTPRINT_LEVELS.map(l=>`<span><i style="background:${l.color}"></i>${l.label}</span>`).join('')+'<span><i class="uncoloured"></i>0 / Not available</span>';
+ const shade=r=>{const level=footprintLevel(r?.[metric]);return {fillColor:level?.color||'#FFFFFF',fillOpacity:level?0.82:0,strokeWeight:level?1:0};};
  const map=new google.maps.Map(target,{center:{lat:18,lng:15},zoom:1,minZoom:0,maxZoom:18,styles:PISELL_MAP_STYLE,mapTypeControl:false,streetViewControl:false,fullscreenControl:true,zoomControl:false,gestureHandling:'cooperative',isFractionalZoomEnabled:true});
- const fit=()=>{map.setCenter({lat:18,lng:15});map.setZoom(Math.max(0,Math.log2(target.clientWidth/256)-.06));};fit();
+ const fit=()=>map.fitBounds({south:-58,west:-179.5,north:75,east:179.5},12);fit();
  map.data.addGeoJson(geo);
- map.data.setStyle(feature=>({visible:true,fillColor:'#EF4323',strokeColor:'#C43214',strokeOpacity:.8,clickable:true,...shade(countries.get(nameOf(feature)))}));
- map.data.addListener('mouseover',e=>map.data.overrideStyle(e.feature,{fillOpacity:countries.get(nameOf(e.feature))?.projects>0?.8:.35,strokeWeight:2}));
+ const applyScale=()=>{map.data.setStyle(feature=>({visible:true,strokeColor:'#C43214',strokeOpacity:.65,clickable:true,...shade(countries.get(nameOf(feature)))}));target.dataset.metric=metric;target.dataset.coloredCountries=String([...countries.values()].filter(r=>r[metric]>0).length);};applyScale();
+ metricControl.onchange=()=>{metric=metricControl.value;sessionStorage.setItem('pisell-footprint-metric',metric);map.data.revertStyle();applyScale();};
+ map.data.addListener('mouseover',e=>map.data.overrideStyle(e.feature,{strokeWeight:1.8}));
  map.data.addListener('mouseout',e=>map.data.revertStyle(e.feature));
  map.data.addListener('click',e=>openCountry(nameOf(e.feature)));
  map.addListener('dragstart',()=>document.querySelector('#detail')?.close());
@@ -28,7 +33,7 @@ export async function mountFootprint({target,api,projects,regions,selected,showD
  }
  const pins=[];map.data.forEach(f=>{const country=nameOf(f);if(countries.get(country)?.projects>0||countries.get(country)?.leads>0)pins.push(new RegionPin(new google.maps.LatLng(f.getProperty('labelLat'),f.getProperty('labelLng')),country));});
  for(const p of projects.filter(p=>p.latitude!=null&&p.longitude!=null))pins.push(new RegionPin(new google.maps.LatLng(p.latitude,p.longitude),p.country,{label:p.name,open:()=>openProject(p.id)}));
- target.dataset.loaded='true';target.dataset.coloredCountries=String(pins.length);
+ target.dataset.loaded='true';
  async function openCountry(country){const count=countries.get(country);if(!count)return;chooser.value=country;
   const region=regions.find(r=>r.country===country||r.name===country),regionNote=region?.level?`Level ${region.level} · ${region.description||'Regional presence'}`:country==='Australia'?'Level 1 · Established operations':'Regional presence level not confirmed';
   showDrawer('Regional footprint',`<h1>${esc(country)}</h1><p class="meta">${esc(regionNote)}</p><div class="footprint-counts">${[['projects','Existing projects'],['leads','Leads / opportunities']].map(([key,label])=>`<div><strong>${countText(count[key])}</strong><span>${label}</span></div>`).join('')}</div><p class="meta">${count.coverage?esc(count.coverage.scope)+' · Checked '+esc(count.coverage.checked_at):'Venue research has not been recorded for this region.'}</p><div id="footprint-records" role="status">Loading records…</div>`);

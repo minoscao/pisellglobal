@@ -64,3 +64,13 @@ Grid / List / Map preview 使用同一内容结构的不同密度。封面、名
 ## 验收情景
 
 选择 Singapore → 切换 Projects → 打开展会项目 → 查看资料 → 返回 → 切换 Map。整个过程保留 Singapore 条件，显示同一项目、同一负责人、同一进度和同一封面。
+
+## 13 September 2026 — flow-first dashboard (current)
+
+The latest user correction supersedes the Dashboard composition and card rules above. Overview is a department operating flow, not the project collection: Readiness (tall Sales Materials, Online Media, Local Showroom), Acquisition (AI Sales Engine, Customer Enquiries, Exhibition), and Target Customers / commercial results. Partnerships spans only the Online Media / Showroom column and Acquisition. Customer Progress follows below; Global footprint is a lower results section. Existing customer cards belong to Projects and Customers only.
+
+Dashboard metrics use all recorded workspace data. Existing project filters remain preserved for Projects / Map and do not silently filter the department flow. Readiness shows registered files and marks unassessed readiness; no invented completion percentage. Unconnected enquiries, referrals and automated collection are labelled honestly. Imported customer history is not claimed as acquisition-engine conversion.
+
+Customer identity: image, country on the first line, customer name on the second, service status at the right. No oversized Target Customers banner on signed service projects. Contract and payment values remain visible and unknown amounts remain unknown.
+
+Footprint switches between Existing projects and Leads / opportunities. Both counts remain visible in the regional detail. Fixed quantity bins: 1, 2–5, 6–10, 11–50, 51+. Known zero and unavailable research are uncoloured; unavailable counts remain Not available. Hover changes the outline only.

@@ -15,11 +15,17 @@ export function parseMoney(value,currency){
 }
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&new Date(s).toISOString().slice(0,10)===s;
 export async function commercialRecords(db){
- const [orders,payments]=await Promise.all([rows(db,'SELECT o.*,cp.project_id,cp.service_status FROM orders o JOIN customer_projects cp ON cp.order_id=o.id'),rows(db,'SELECT * FROM payments ORDER BY received_at DESC')]);
+ const [orders,payments]=await Promise.all([rows(db,'SELECT o.*,cp.project_id,cp.service_status,c.name AS customer_name,p.cover_url FROM orders o JOIN customer_projects cp ON cp.order_id=o.id JOIN companies c ON c.id=o.company_id LEFT JOIN customer_profiles p ON p.company_id=c.id'),rows(db,'SELECT * FROM payments ORDER BY received_at DESC')]);
  return orders.map(o=>{const p=payments.filter(p=>p.order_id===o.id);return {...o,payments:p,summary:financialSummary(o,p)};});
 }
 export async function attachCommercial(db,projects){const orders=await commercialRecords(db);return projects.map(p=>({...p,commercial:orders.find(o=>o.project_id===p.id)||null}));}
 export async function customerRoutes(req,env,user){const db=env.DB,path=new URL(req.url).pathname;
+ const image=path.match(/^\/api\/customer-images\/(customer-[a-z0-9-]+)$/);
+ if(image&&req.method==='GET'){
+  const profile=await db.prepare('SELECT company_id FROM customer_profiles WHERE company_id=?').bind(image[1]).first();if(!profile)return json({error:'Customer image not found.'},404);
+  const object=await env.FILES.get(`customers/${image[1]}/cover.jpg`);if(!object)return json({error:'Customer image unavailable.'},404);
+  return new Response(object.body,{headers:{'content-type':'image/jpeg','cache-control':'private, max-age=3600','x-content-type-options':'nosniff'}});
+ }
  if(path==='/api/customers'&&req.method==='GET'){
   const [records,projects,orders]=await Promise.all([rows(db,"SELECT DISTINCT c.*,cp.service_status,cp.country,cp.city,cp.industry,cp.cover_url FROM companies c JOIN opportunities o ON o.company_id=c.id JOIN milestone_confirmations m ON m.opportunity_id=o.id LEFT JOIN customer_profiles cp ON cp.company_id=c.id WHERE m.milestone='V3' AND m.revoked_at IS NULL ORDER BY c.name"),rows(db,'SELECT * FROM work_projects WHERE company_id IS NOT NULL'),commercialRecords(db)]);
   return json({records:records.map(c=>({...c,projects:projects.filter(p=>p.company_id===c.id),orders:orders.filter(o=>o.company_id===c.id)}))});
