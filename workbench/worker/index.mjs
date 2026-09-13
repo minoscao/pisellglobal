@@ -31,9 +31,16 @@ async function fetchHandler(req,env){
  }
  if(p==='/api/session')return json(user?{...user,signedIn:true,canEdit:user.role!=='viewer'}:{signedIn:false,canEdit:false});
  if(p==='/api/logout'&&req.method==='POST'){if(token)await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await sha(token)).run();return json({ok:true},200,{'set-cookie':'pisell_session=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0'});}
- if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
+ if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/footprint.css','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
  if(mutation&&user.role==='viewer')return json({error:'Editing access is required.'},403);
  const alertResponse=await alertRoutes(req,env,user);if(alertResponse)return alertResponse;
+ if(p==='/api/footprint'){
+  const countries=await query(db,`SELECT country,SUM(venues) venues,SUM(exhibitions) exhibitions FROM (
+   SELECT v.country,count(*) venues,0 exhibitions FROM venues v WHERE NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys k JOIN exclusion_keys e ON e.key=k.key WHERE k.venue_id=v.id) GROUP BY v.country
+   UNION ALL SELECT country,0,count(*) FROM exhibitions GROUP BY country
+  ) WHERE country IS NOT NULL AND country!='' GROUP BY country ORDER BY country`);
+  return json({countries});
+ }
  if(p==='/api/bootstrap'){
   const [projects,users,regions,activity,counts]=await Promise.all([
    query(db,`SELECT p.*,u.name owner_name,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status!='cancelled') task_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status='done') done_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.needs_decision=1 AND t.status NOT IN ('done','cancelled')) decision_count FROM work_projects p LEFT JOIN users u ON u.id=p.owner_id ORDER BY p.updated_at DESC`),

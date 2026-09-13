@@ -52,3 +52,9 @@ Native browser 200% zoom has not been separately certified. Google Maps logged a
 - Real Chromium verified nonmodal details, outside dismissal, map-marker opening, zoomed labels and Google photo previous/next controls. Global alert creation guidance and saved trigger controls verified.
 - 5 Node and 9 SQLite checks passed. Local HTTP checks cover authentication, 147-record Melbourne collection, 15 alerts, 35 triggers, stale trigger/review conflicts, excluded alerts, note preservation and R2 upload/download.
 - Production migration is additive. Existing venue research was refreshed only for sourced social/revenue fields under revision and exclusion guards. Original import guard accepted 147 records against a fresh hosted ledger. Manual notes and permanent exclusions are preserved; test writes stayed local.
+
+## Global footprint correction
+
+The overview now uses interactive Google Maps with reusable Pisell style configuration. Countries with existing venues, exhibitions or selected projects are shaded orange. Country summaries are read from D1 with permanent exclusions applied; region presence is a separate annotation. A region drawer lists the actual sourced records. Natural Earth country boundaries and attribution are recorded in THIRD-PARTY.md. The shared Google loader is reused by Global Alerts.
+
+Browser checks confirm 17 shaded region features, Thailand’s 3 venues and 2 exhibitions, Singapore’s 3 exhibitions, nonmodal region details, working zoom controls and no mobile horizontal overflow.

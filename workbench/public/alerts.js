@@ -5,14 +5,9 @@ import {channelCharts} from '/venues/channel-charts.js';
 import {SOCIAL_CONFIG} from '/venues/social-heat.js';
 const STAGES={announced:'Announced',planning:'Planning / approvals',construction:'Fit-out / construction',preopening:'Pre-opening',partially_open:'Partially open',open:'Operating',unknown:'Status unconfirmed',conflict:'Conflicting evidence',closed:'Closed'};
 const REVIEW={new:'To review',reviewed:'Reviewed',snoozed:'On hold',resolved:'Resolved'};
-let mapLoading,allVenues,allVenuesPromise;
+import {loadGoogleMaps as maps} from './google-maps.js';
+let allVenues,allVenuesPromise;
 const places=new Map();
-async function maps(){
- if(window.google?.maps?.Map)return window.google;
- if(mapLoading)return mapLoading;
- mapLoading=(async()=>{if(!window.PISELL_MAPS_KEY)await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='/venues/maps-config.js';s.onload=resolve;s.onerror=()=>reject(Error('Map configuration unavailable.'));document.head.append(s);});
- await new Promise((resolve,reject)=>{window.pisellAlertMapReady=resolve;const s=document.createElement('script');s.src='https://maps.googleapis.com/maps/api/js?key='+encodeURIComponent(window.PISELL_MAPS_KEY)+'&libraries=marker&loading=async&callback=pisellAlertMapReady&language=en';s.onerror=()=>{mapLoading=null;reject(Error('Map unavailable. All alerts remain in the list.'));};document.head.append(s);});return window.google;})();return mapLoading;
-}
 async function place(r){if(!places.has(r.placeId))places.set(r.placeId,fetch('https://places.googleapis.com/v1/places/'+encodeURIComponent(r.placeId),{headers:{'X-Goog-Api-Key':window.PISELL_MAPS_KEY,'X-Goog-FieldMask':'id,location'}}).then(async res=>{if(!res.ok)throw Error('Location unavailable');return res.json();}).catch(e=>{places.delete(r.placeId);throw e;}));return places.get(r.placeId);}
 export async function mountAlerts({host,api,showDrawer,toast,canEdit,icon,esc,date}){
  if(!host)return;
