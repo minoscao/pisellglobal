@@ -1,0 +1,181 @@
+{
+  "source": "Original Melbourne workspace",
+  "readOn": "2026-09-13",
+  "settings": [
+    {
+      "id": "founder-intent",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "site-search",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "franchise-project",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "project-funding",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "lease-signed",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "planning-application",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "planning-decision",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "design-release",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "fitout-tender",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "site-works",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "equipment-installation",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "signage",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "systems-selection",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "opening-jobs",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "opening-date",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "presales",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "soft-opening",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "training",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "actual-opening",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "booking-friction",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "payment-friction",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "membership-friction",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "multiple-tools",
+      "enabled": true,
+      "priority": "minor"
+    },
+    {
+      "id": "data-disconnection",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "upgrade-intent",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "new-branch",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "new-modules",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "ownership-change",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "group-integration",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "closure-relaunch",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "turnover-disclosure",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "financial-publication",
+      "enabled": true,
+      "priority": "minor"
+    },
+    {
+      "id": "conflicting-evidence",
+      "enabled": true,
+      "priority": "important"
+    },
+    {
+      "id": "new-discovery-pattern",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "id": "stale-critical-claim",
+      "enabled": true,
+      "priority": "medium"
+    }
+  ]
+}

@@ -5,3 +5,5 @@ dist/
 output/
 seed.sql
 *.local.json
+
+*.seed.sql

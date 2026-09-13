@@ -15,7 +15,7 @@ The integrated application is deployed as the `pisellglobal` Cloudflare Worker. 
 
 ## Scope boundaries
 
-Global Alerts currently presents the Greater Melbourne opening-signal collection. It is a dated research snapshot, not a connected global live feed. V0 venue collection is separate from customer interest. The schema distinguishes companies, venues, opportunities, milestone evidence, orders, payments and handovers; it does not invent V1–V3 qualifications or formal customers.
+Global Alerts presents 15 sourced event signals across a Melbourne-led collection, with additional Australian and Thai records. Create alert explains the GPT collection and import workflow; no research API is connected. The complete venue store has 151 records; the Melbourne search collection has 147. It is a dated research snapshot, not a connected global live feed. V0 venue collection is separate from customer interest. The schema distinguishes companies, venues, opportunities, milestone evidence, orders, payments and handovers; it does not invent V1–V3 qualifications or formal customers.
 
 Partners, Customers and Performance provide real empty states until those records exist. Broader CRM editing, automated research crawling, the existing quotation system and case-library integration are not activated. The inherited exhibition AI service connection remains configurable but no search endpoint has been supplied. Google images identify listings, not construction progress; attribution remains visible. Imported source records and user notes are shared; third-party connection settings remain browser preferences.
 
@@ -28,7 +28,9 @@ npm ci
 npm run build
 npm run db:local
 node workbench/scripts/seed.mjs
+node workbench/scripts/alerts-seed.mjs
 npx wrangler d1 execute DB --local --file workbench/seed.sql
+npx wrangler d1 execute DB --local --file workbench/alerts.seed.sql
 npm run dev
 ```
 
@@ -38,6 +40,7 @@ npm run dev
 npm run check
 npm run db:remote
 npx wrangler d1 execute DB --remote --file workbench/seed.sql
+npx wrangler d1 execute DB --remote --file workbench/alerts.seed.sql
 npm run deploy
 ```
 

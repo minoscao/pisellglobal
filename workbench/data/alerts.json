@@ -1,0 +1,1186 @@
+{
+  "asOf": "2026-09-13",
+  "records": [
+    {
+      "id": "alert-th-color-tenant-verification",
+      "venueId": "th-the-color-chaengwattana-play-tenant",
+      "eventKey": "th-the-color-chaengwattana-play-tenant|tenant_identity|unconfirmed",
+      "triggerId": "design-release",
+      "title": "The Color Chaengwattana — possible indoor play tenant",
+      "change": "The named mall project exists and has a public leasing enquiry route. Press reporting includes amusement within the proposed tenant mix.",
+      "discoveryNote": "First discovery in this library of a named mall with amusement-category signals and a public leasing route.",
+      "whyNow": "Parent mall has reported construction progress and a 2027 target; useful point to identify the venue decision-maker before assuming a sales opportunity.",
+      "nextAction": "Verify whether an indoor children's venue is committed; identify operator, unit, fit-out programme and separate venue opening target.",
+      "unknowns": [
+        "Indoor children's playground tenant and operator",
+        "Venue floor/unit and precise address",
+        "Venue fit-out start and procurement stage",
+        "Venue opening date",
+        "Current mall milestone schedule"
+      ],
+      "observedOn": "2026-09-10",
+      "evidence": [
+        {
+          "publisher": "Big C",
+          "url": "https://corporate.bigc.co.th/news/798/บิ๊กซี-ประกาศวิสัยทัศน์รีเทลยุคใหม่-เดินหน้าขยาย-รีโนเวทสาขาทั่วประเทศ-เปิดเกมรุกไลฟ์สไตล์มอลล์-“The-Color”-ปักหมุดแจ้งวัฒนะ-สร้างแลนด์มาร์คคนเมือง?lang=en",
+          "channel": "developer_announcement",
+          "claim": "Big C announced The Color Chaengwattana at its 13 February 2026 tenant conference.",
+          "date": "2026-02-16",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Prachachat",
+          "url": "https://www.prachachat.net/business/news-1950280",
+          "channel": "news",
+          "claim": "Reporter describes demolition and a fenced construction area near Chaeng Watthana 14 station. Reporter says the project sign gives 15 April 2027 as building completion.",
+          "date": "2026-01-14",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Prachachat",
+          "url": "https://www.prachachat.net/business/news-1964714",
+          "channel": "news",
+          "claim": "Mall opening is reported as Q1 2027. Planned lifestyle tenant mix includes amusement; no specific children's playground operator is named.",
+          "date": "2026-02-13",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "VNP Story",
+          "url": "https://vnpstory.blogspot.com/2026/08/color-5000.html",
+          "channel": "local_creator",
+          "claim": "Author describes mall construction updates through August and lists indoor amusement in the proposed lifestyle wing. Author suggests Q1 to mid-2027 opening; no venue operator is identified.",
+          "date": "2026-08-04",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Big C The Color",
+          "url": "https://thecolor.bigc.co.th/",
+          "channel": "mall_leasing",
+          "claim": "Public form accepts prospective tenant brand, category, space needs and business contact information.",
+          "date": null,
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "opening": "Not confirmed",
+      "dateNote": null,
+      "dateClaims": [
+        {
+          "milestone": "mall_completion",
+          "original_text": "15 เมษายน 2570",
+          "start": "2027-04-15",
+          "end": "2027-04-15",
+          "precision": "day",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-siteworks"
+          ]
+        },
+        {
+          "milestone": "mall_opening",
+          "original_text": "ไตรมาส 1 ปี 2570",
+          "start": "2027-01-01",
+          "end": "2027-03-31",
+          "precision": "quarter",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-tenantmix"
+          ]
+        },
+        {
+          "milestone": "mall_opening",
+          "original_text": "ไตรมาส 1 ถึงกลางปี 2570",
+          "start": null,
+          "end": null,
+          "precision": "vague",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-localupdate"
+          ]
+        },
+        {
+          "milestone": "venue_opening",
+          "original_text": null,
+          "start": null,
+          "end": null,
+          "precision": "unknown",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": []
+        }
+      ],
+      "kind": "verification_needed",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-pimpama-planning",
+      "venueId": "au-pimpama-75-nexus-indoor-play",
+      "eventKey": "au-pimpama-75-nexus-indoor-play|application|MCU-2026-213",
+      "triggerId": "planning-application",
+      "title": "Indoor playground and cafe — 75 Nexus Drive, Pimpama",
+      "change": "Municipal application explicitly identifies an indoor playground with ancillary cafe. The portal displays In Progress.",
+      "discoveryNote": "First discovery of a named indoor-playground application at a specific site.",
+      "whyNow": "Project is visible at the planning stage before an opening date is confirmed.",
+      "nextAction": "Check application documents for applicant and project contacts, distinguish agent from operator, then verify project status and opening target.",
+      "unknowns": [
+        "Operator / trading brand",
+        "Application lodgement and decision dates",
+        "Latest approval outcome",
+        "Fit-out and procurement status",
+        "Opening date"
+      ],
+      "observedOn": "2026-09-10",
+      "evidence": [
+        {
+          "publisher": "City of Gold Coast",
+          "url": "https://developmenti.goldcoast.qld.gov.au/Home/ApplicationDetailsView?appNo=MCU%2F2026%2F213&type=plan_development_apps",
+          "channel": "planning_application",
+          "claim": "Application describes an indoor playground and ancillary cafe at 75 Nexus Drive, Pimpama QLD 4209. Readable portal shows In Progress; lodged and decided dates are blank.",
+          "date": null,
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "opening": "Not confirmed",
+      "dateNote": null,
+      "dateClaims": [
+        {
+          "milestone": "venue_opening",
+          "original_text": null,
+          "start": null,
+          "end": null,
+          "precision": "unknown",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": []
+        }
+      ],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-hoopla-bayswater-discovery-2026-09-12",
+      "venueId": "au-melbourne-hoopla-bayswater",
+      "eventKey": "au-melbourne-hoopla-bayswater|initial-discovery|2026-09-12",
+      "triggerId": "opening-jobs",
+      "title": "Hoopla — Bayswater",
+      "change": "Operator announcement and branch-specific pre-opening recruitment support a real preparation opportunity.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Hoopla",
+          "url": "https://visithoopla.com.au/locations-coming-soon/",
+          "channel": "operator website",
+          "claim": "Bayswater is advertised as coming soon; no street address or exact opening day is provided.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Hoopla / SEEK",
+          "url": "https://au.seek.com/job/94389379?origin=cardTitle&ref=search-standalone&type=standard",
+          "channel": "jobs",
+          "claim": "Bayswater head-chef recruitment includes establishing the kitchen before opening. The listing showed a relative posting date.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Hoopla / SEEK",
+          "url": "https://au.seek.com/job/94389064?origin=cardTitle&ref=search-standalone&type=standard",
+          "channel": "jobs",
+          "claim": "Bayswater venue-manager recruitment covers staffing, stock and venue operations.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "ABN Lookup",
+          "url": "https://abr.business.gov.au/ABN/View?id=96689053012",
+          "channel": "business register",
+          "claim": "Capital-company ABN active from 14 July 2025. Its registration postcode is not the venue address.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Mamma Knows South",
+          "url": "https://mammaknowssouth.com.au/indoor-adventures",
+          "channel": "local creator",
+          "claim": "A 31 July 2026 local report gives late 2026 for Bayswater; operator confirmation is outstanding.",
+          "access": "read",
+          "date": "2026-07-31",
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Public LinkedIn profile / Peter Kondos post",
+          "url": "https://au.linkedin.com/in/shanna-baxter-a1246416",
+          "channel": "social",
+          "claim": "Search excerpt refers to Pakenham opening and Bayswater completion. Original post and construction images were not inspected.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Late 2026",
+      "dateNote": "Third-party window; operator date unconfirmed",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "important"
+    },
+    {
+      "id": "alert-au-melbourne-diggerland-knox-discovery-2026-09-12",
+      "venueId": "au-melbourne-diggerland-knox",
+      "eventKey": "au-melbourne-diggerland-knox|initial-discovery|2026-09-12",
+      "triggerId": "new-branch",
+      "title": "Diggerland — Westfield Knox",
+      "change": "Named upcoming Westfield tenant. No verified construction milestone or opening date.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Westfield Knox",
+          "url": "https://www.westfield.com.au/knox/news/1I7mowA0oI4jiMue5HO6EL/exciting-new-stores",
+          "channel": "mall announcement",
+          "claim": "Westfield lists Diggerland as an upcoming arrival at Level 1 Ozone. BattleKart is a separate attraction.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not published",
+      "dateNote": "Landlord announcement",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "important"
+    },
+    {
+      "id": "alert-au-melbourne-amigos-fountain-discovery-2026-09-12",
+      "venueId": "au-melbourne-amigos-fountain",
+      "eventKey": "au-melbourne-amigos-fountain|initial-discovery|2026-09-12",
+      "triggerId": "new-branch",
+      "title": "Little Amigos — Fountain Gate",
+      "change": "Landlord names the tenant and exact mall location; opening remains pending.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Westfield Fountain Gate",
+          "url": "https://www.westfield.com.au/fountaingate/store/10UZOnTExd8nnd3TevUC4F/little-amigos",
+          "channel": "mall announcement",
+          "claim": "Westfield lists Little Amigos as Opening Soon, Level 1 near Woolworths.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "ABN Lookup",
+          "url": "https://abr.business.gov.au/ABN/View?id=94663844620",
+          "channel": "business register",
+          "claim": "Branch-named company ABN active since 15 November 2022. Registration does not establish opening.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not published",
+      "dateNote": "Official Opening Soon listing",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "important"
+    },
+    {
+      "id": "alert-au-melbourne-playhut-chelsea-discovery-2026-09-12",
+      "venueId": "au-melbourne-playhut-chelsea",
+      "eventKey": "au-melbourne-playhut-chelsea|initial-discovery|2026-09-12",
+      "triggerId": "franchise-project",
+      "title": "PlayHut — Chelsea Heights",
+      "change": "Operator launch page and franchise listing agree on Chelsea Heights. Tenant and fit-out progress need verification.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "PlayHut",
+          "url": "https://www.playhut.com.au/",
+          "channel": "operator website",
+          "claim": "Chelsea Heights is in the operator navigation as coming soon. Breakwater is a different venue.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "AnyBusiness / PlayHut franchise listing",
+          "url": "https://www.anybusiness.com.au/listings/chelsea-heights-vic-3196-leisure-entertainment-amusements-food-hospitality-cafe-coffee-shop-education-training-child-care-3470979",
+          "channel": "franchise listing",
+          "claim": "Chelsea Heights franchise offering describes a new approximately 650-square-metre play centre; listing updated 4 September 2026.",
+          "access": "snippet_only",
+          "date": "2026-09-04",
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Bsale",
+          "url": "https://bsale.com.au/gyms-for-sale-business/chelsea-heights-vic-3196",
+          "channel": "franchise listing",
+          "claim": "An older aggregate listing mentions mid-year without a reliable year; not a current opening commitment.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not confirmed",
+      "dateNote": "Older mid-year claim is unreliable",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-yahya-discovery-2026-09-12",
+      "venueId": "au-melbourne-yahya",
+      "eventKey": "au-melbourne-yahya|initial-discovery|2026-09-12",
+      "triggerId": "founder-intent",
+      "title": "Yahya Playland",
+      "change": "Inclusive play project has an operator announcement and registered business identity. Physical site is not yet verified.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Yahya Playland",
+          "url": "https://www.linkedin.com/posts/yahya-playland_yahya-playland-activity-7429414316698771457-tPm9",
+          "channel": "social",
+          "claim": "Official LinkedIn announcement describes an inclusive Melbourne play project, coming soon. No exact site or opening date.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Yahya Playland",
+          "url": "https://yahyaplayland.com.au/",
+          "channel": "operator website",
+          "claim": "Operator describes inclusive play and sensory areas. No sufficiently specific current trading evidence was found.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "ABN Lookup",
+          "url": "https://abr.business.gov.au/ABN/View?id=99693179672",
+          "channel": "business register",
+          "claim": "Company active from 25 November 2025; Yahya Playland business name registered 17 December 2025. Postcode is not a site address.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Yahya Playland",
+          "url": "https://yahyaplayland.com.au/contact-us",
+          "channel": "operator website",
+          "claim": "Public business contact route; no enquiry has been sent.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not published",
+      "dateNote": "Announcement only",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-builders-doncaster-discovery-2026-09-12",
+      "venueId": "au-melbourne-builders-doncaster",
+      "eventKey": "au-melbourne-builders-doncaster|initial-discovery|2026-09-12",
+      "triggerId": "opening-date",
+      "title": "Little Builders — Doncaster",
+      "change": "Regional launch / franchise signal. No confirmed physical site; do not count as a secured new store.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Retain in V0. Check for a concrete new project, upgrade or operating problem before recommending V1.",
+      "unknowns": [
+        "Street address and operator commitment.",
+        "Permanent store or temporary experience.",
+        "Whether the advertised date remains valid."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/cities/little-builders-doncaster's-largest-indoor-sandpit",
+          "channel": "operator website",
+          "claim": "Regional launch page gives 1 October 2026 and a secret location. Address, works and permanent-store format remain unverified.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/",
+          "channel": "operator website",
+          "claim": "Operator lists regional launch pages; Docklands is separately described as open. Regional pages do not prove permanent stores.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "LittleTix",
+          "url": "https://little-tix.com/home",
+          "channel": "ticket platform",
+          "claim": "Ticket index references regional experiences. Actual available sessions and checkout were not verified.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "1 Oct 2026",
+      "dateNote": "Provisional date on regional page",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-builders-werribee-discovery-2026-09-12",
+      "venueId": "au-melbourne-builders-werribee",
+      "eventKey": "au-melbourne-builders-werribee|initial-discovery|2026-09-12",
+      "triggerId": "opening-date",
+      "title": "Little Builders — Werribee",
+      "change": "Regional launch / franchise signal. No confirmed physical site; do not count as a secured new store.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Retain in V0. Check for a concrete new project, upgrade or operating problem before recommending V1.",
+      "unknowns": [
+        "Street address and operator commitment.",
+        "Permanent store or temporary experience.",
+        "Whether the advertised date remains valid."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/cities/little-builders-werribee's-largest-indoor-sandpit",
+          "channel": "operator website",
+          "claim": "Regional launch page gives 1 October 2026 and a secret location. Address, works and permanent-store format remain unverified.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/",
+          "channel": "operator website",
+          "claim": "Operator lists regional launch pages; Docklands is separately described as open. Regional pages do not prove permanent stores.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "LittleTix",
+          "url": "https://little-tix.com/home",
+          "channel": "ticket platform",
+          "claim": "Ticket index references regional experiences. Actual available sessions and checkout were not verified.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "1 Oct 2026",
+      "dateNote": "Provisional date on regional page",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-builders-south-east-melbourne-discovery-2026-09-12",
+      "venueId": "au-melbourne-builders-south-east-melbourne",
+      "eventKey": "au-melbourne-builders-south-east-melbourne|initial-discovery|2026-09-12",
+      "triggerId": "opening-date",
+      "title": "Little Builders — South East Melbourne",
+      "change": "Regional launch / franchise signal. No confirmed physical site; do not count as a secured new store.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Retain in V0. Check for a concrete new project, upgrade or operating problem before recommending V1.",
+      "unknowns": [
+        "Street address and operator commitment.",
+        "Permanent store or temporary experience.",
+        "Whether the advertised date remains valid."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/cities/little-builders-south-east-melbourne's-largest-indoor-sandpit",
+          "channel": "operator website",
+          "claim": "Regional launch page gives 1 October 2026 and a secret location. Address, works and permanent-store format remain unverified.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/",
+          "channel": "operator website",
+          "claim": "Operator lists regional launch pages; Docklands is separately described as open. Regional pages do not prove permanent stores.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "LittleTix",
+          "url": "https://little-tix.com/home",
+          "channel": "ticket platform",
+          "claim": "Ticket index references regional experiences. Actual available sessions and checkout were not verified.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "1 Oct 2026",
+      "dateNote": "Provisional date on regional page",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-builders-glen-waverley-discovery-2026-09-12",
+      "venueId": "au-melbourne-builders-glen-waverley",
+      "eventKey": "au-melbourne-builders-glen-waverley|initial-discovery|2026-09-12",
+      "triggerId": "opening-date",
+      "title": "Little Builders — Glen Waverley",
+      "change": "Regional launch / franchise signal. No confirmed physical site; do not count as a secured new store.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Retain in V0. Check for a concrete new project, upgrade or operating problem before recommending V1.",
+      "unknowns": [
+        "Street address and operator commitment.",
+        "Permanent store or temporary experience.",
+        "Whether the advertised date remains valid."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/cities/little-builders-glen-waverley's-largest-indoor-sandpit",
+          "channel": "operator website",
+          "claim": "Regional launch page gives 1 December 2026 and a secret location. Address, works and permanent-store format remain unverified.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Little Builders",
+          "url": "https://www.littlebuildersplaycentres.com/",
+          "channel": "operator website",
+          "claim": "Operator lists regional launch pages; Docklands is separately described as open. Regional pages do not prove permanent stores.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "LittleTix",
+          "url": "https://little-tix.com/home",
+          "channel": "ticket platform",
+          "claim": "Ticket index references regional experiences. Actual available sessions and checkout were not verified.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "1 Dec 2026",
+      "dateNote": "Provisional date on regional page",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-cranbourne-pa26-0230-discovery-2026-09-12",
+      "venueId": "au-melbourne-cranbourne-pa26-0230",
+      "eventKey": "au-melbourne-cranbourne-pa26-0230|initial-discovery|2026-09-12",
+      "triggerId": "planning-application",
+      "title": "Unnamed Play Centre — PA26-0230",
+      "change": "Planning-index lead; original application, operator and current decision must be checked.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Microburbs / Casey planning aggregation",
+          "url": "https://www.microburbs.com.au/Real-Estate/Cranbourne-North",
+          "channel": "planning aggregator",
+          "claim": "Secondary planning index: PA26-0230, warehouse and play-centre use, 1551 Thompsons Road, dated 5 June 2026. Original Casey file not read.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not published",
+      "dateNote": "Application date is not an opening date",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-pakenham-t230659-discovery-2026-09-12",
+      "venueId": "au-melbourne-pakenham-t230659",
+      "eventKey": "au-melbourne-pakenham-t230659|initial-discovery|2026-09-12",
+      "triggerId": "planning-application",
+      "title": "Unnamed Play Centre — T230659-1",
+      "change": "A proposed play-centre tenancy appears in public council application material. No approval or works confirmed.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Cardinia Shire Council",
+          "url": "https://www.cardinia.vic.gov.au/download/downloads/id/7186/t230659_-1_app_-_28_commercial_drive_pakenham.pdf",
+          "channel": "planning record",
+          "claim": "Council PDF search excerpt identifies proposed play use at Tenancy 1, 28 Commercial Drive. Document date 26 March 2026; approval and construction not established.",
+          "access": "snippet_only",
+          "date": "2026-03-26",
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not published",
+      "dateNote": "Council search excerpt; full PDF unavailable",
+      "dateClaims": [],
+      "kind": "new_project",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-au-melbourne-bayswater-2025-6494-discovery-2026-09-12",
+      "venueId": "au-melbourne-bayswater-2025-6494",
+      "eventKey": "au-melbourne-bayswater-2025-6494|initial-discovery|2026-09-12",
+      "triggerId": "conflicting-evidence",
+      "title": "Unresolved Play Centre — 2025/6494",
+      "change": "Approved play use, but operator identity conflicts with a directory address. Do not merge into Hoopla or Ninja Parc.",
+      "discoveryNote": "Newly recorded in this local library; not necessarily newly announced publicly.",
+      "whyNow": "A sourced project signal is ready for internal review. Confirm the operator and remaining decision window.",
+      "nextAction": "Review for V1 after confirming the site, project timing and a relevant next action.",
+      "unknowns": [
+        "Exact operator-confirmed date and any unresolved site details.",
+        "Current decision-maker and remaining system procurement window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Knox City Council",
+          "url": "https://www.knox.vic.gov.au/sites/default/files/2026-03/2026-03-23-AgendaMeetingofCouncil.pdf",
+          "channel": "planning record",
+          "claim": "Council agenda records approval on 5 February 2026 for application 2025/6494, 8/841 Mountain Highway. Opening and tenant identity remain unknown.",
+          "access": "read",
+          "date": "2026-03-23",
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "PlaySport",
+          "url": "https://playsport.com/NinjaParc_Knox",
+          "channel": "directory",
+          "claim": "Directory lists Ninja Parc at 8/841 Mountain Highway; this may be an old address.",
+          "access": "snippet_only",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Ninja Parc",
+          "url": "https://ninjaparc.com.au/contact-us",
+          "channel": "operator website",
+          "claim": "Operator instead lists Bayswater at 13–15 Burton Court with hours and booking. Do not assign the separate permit to this business.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Domain",
+          "url": "https://www.domain.com.au/property-profile/8-841-mountain-highway-bayswater-vic-3153",
+          "channel": "property listing",
+          "claim": "Property history reports rented in June 2025; tenant is not disclosed.",
+          "access": "read",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Not confirmed",
+      "dateNote": "Permit approval does not establish venue status",
+      "dateClaims": [],
+      "kind": "verification_needed",
+      "priority": "medium"
+    },
+    {
+      "id": "alert-melbourne-rainbow-braeside-play-opening",
+      "venueId": "au-melbourne-rainbow-braeside",
+      "eventKey": "rainbow-braeside|play-zone-opening|unconfirmed",
+      "triggerId": "soft-opening",
+      "title": "Rainbow Town — Braeside",
+      "change": "Badminton is operating. Children’s play is reported unopened; second-venue recruitment independently supports a launch project.",
+      "discoveryNote": "Second-site record added and zone-level opening distinguished from the original Glen Waverley venue.",
+      "whyNow": "Pre-opening recruitment and the user’s report identify a possible remaining implementation window for the play business.",
+      "nextAction": "Priority V1 review: verify the play-zone timetable and multi-zone booking, ticketing, party and café requirements.",
+      "unknowns": [
+        "Revised playground launch date.",
+        "Readiness of each play zone.",
+        "Software procurement owner and remaining decision window."
+      ],
+      "observedOn": "2026-09-12",
+      "evidence": [
+        {
+          "publisher": "Rainbow Town",
+          "url": "https://rainbowtownplay.com/pages/badminton",
+          "channel": "Operator website",
+          "claim": "Operator advertises badminton courts, daily hours and booking. This does not establish that the children’s playground is open.",
+          "access": "Read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Rainbow Town recruitment / BeBee",
+          "url": "https://bebee.com/au/jobs/venue-manager-flagship-indoor-family-entertainment-venue-braeside-rainbow-town-braeside-pty-ltd-brae--t7xk-748828526",
+          "channel": "Recruitment syndication",
+          "claim": "Employer describes its second, 12,000 m² venue and pre-opening recruitment. Advertised late-August target is past and unconfirmed.",
+          "access": "Read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "ABN Lookup",
+          "url": "https://abr.business.gov.au/ABN/View?abn=80686920285",
+          "channel": "Business register",
+          "claim": "Braeside company active from 8 May 2025; badminton and pickleball business name registered 3 July 2026. Registration is not an opening date.",
+          "access": "Read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "NP Sports",
+          "url": "https://www.npsports.net/social-sessions",
+          "channel": "Independent activity organiser",
+          "claim": "Social badminton organiser lists Rainbow Town at 414–426 Lower Dandenong Road, Braeside.",
+          "access": "Read",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "User observation — 12 Sep 2026",
+          "url": null,
+          "channel": "User-supplied evidence",
+          "claim": "User reports badminton has opened while the second venue’s children’s playground has not yet opened.",
+          "access": "Reported; not independently observed",
+          "date": "2026-09-12",
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Rainbow Town Instagram",
+          "url": "https://www.instagram.com/rainbowtownplaycentre/",
+          "channel": "Social account",
+          "claim": "Official-site account link located. Feed was unavailable for inspection.",
+          "access": "Unavailable",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Rainbow Town Facebook",
+          "url": "https://www.facebook.com/profile.php?id=100063704487357",
+          "channel": "Social account",
+          "claim": "Official-site account link located. Feed was unavailable for inspection.",
+          "access": "Unavailable",
+          "date": null,
+          "checked": "2026-09-12"
+        },
+        {
+          "publisher": "Rainbow Town / SEEK",
+          "url": "https://au.seek.com/venue-support-officer-jobs/in-Caulfield-VIC-3162",
+          "channel": "Recruitment index",
+          "claim": "SEEK lists Braeside venue-team recruitment covering reception, barista, party host and floor attractions at a new venue.",
+          "access": "Search excerpt",
+          "date": null,
+          "checked": "2026-09-12"
+        }
+      ],
+      "opening": "Play area: not confirmed",
+      "dateNote": "Late-August recruitment target not confirmed; user reports play area unopened on 12 Sep",
+      "dateClaims": [],
+      "kind": "verification_needed",
+      "priority": "important"
+    }
+  ],
+  "extraVenues": [
+    {
+      "id": "th-the-color-chaengwattana-play-tenant",
+      "name": "The Color Chaengwattana — possible indoor play tenant",
+      "country": "Thailand",
+      "suburb": "Chaeng Watthana, near Chaeng Watthana 14 station",
+      "region": "Chaeng Watthana, near Chaeng Watthana 14 station",
+      "address": "Not published",
+      "phase": "unknown",
+      "confidence": "low",
+      "assessment": "The named mall project exists and has a public leasing enquiry route. Press reporting includes amusement within the proposed tenant mix.",
+      "opening": "Not confirmed",
+      "openingInfo": {
+        "label": "Not confirmed",
+        "start": null,
+        "end": null,
+        "precision": "unknown",
+        "basis": "planned"
+      },
+      "type": "Indoor play / family entertainment",
+      "checked": "2026-09-10",
+      "unknowns": [
+        "Indoor children's playground tenant and operator",
+        "Venue floor/unit and precise address",
+        "Venue fit-out start and procurement stage",
+        "Venue opening date",
+        "Current mall milestone schedule"
+      ],
+      "next": "Verify whether an indoor children's venue is committed; identify operator, unit, fit-out programme and separate venue opening target.",
+      "sources": [
+        {
+          "publisher": "Big C",
+          "url": "https://corporate.bigc.co.th/news/798/บิ๊กซี-ประกาศวิสัยทัศน์รีเทลยุคใหม่-เดินหน้าขยาย-รีโนเวทสาขาทั่วประเทศ-เปิดเกมรุกไลฟ์สไตล์มอลล์-“The-Color”-ปักหมุดแจ้งวัฒนะ-สร้างแลนด์มาร์คคนเมือง?lang=en",
+          "channel": "developer_announcement",
+          "claim": "Big C announced The Color Chaengwattana at its 13 February 2026 tenant conference.",
+          "date": "2026-02-16",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Prachachat",
+          "url": "https://www.prachachat.net/business/news-1950280",
+          "channel": "news",
+          "claim": "Reporter describes demolition and a fenced construction area near Chaeng Watthana 14 station. Reporter says the project sign gives 15 April 2027 as building completion.",
+          "date": "2026-01-14",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Prachachat",
+          "url": "https://www.prachachat.net/business/news-1964714",
+          "channel": "news",
+          "claim": "Mall opening is reported as Q1 2027. Planned lifestyle tenant mix includes amusement; no specific children's playground operator is named.",
+          "date": "2026-02-13",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "VNP Story",
+          "url": "https://vnpstory.blogspot.com/2026/08/color-5000.html",
+          "channel": "local_creator",
+          "claim": "Author describes mall construction updates through August and lists indoor amusement in the proposed lifestyle wing. Author suggests Q1 to mid-2027 opening; no venue operator is identified.",
+          "date": "2026-08-04",
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "dateClaims": [
+        {
+          "milestone": "mall_completion",
+          "original_text": "15 เมษายน 2570",
+          "start": "2027-04-15",
+          "end": "2027-04-15",
+          "precision": "day",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-siteworks"
+          ]
+        },
+        {
+          "milestone": "mall_opening",
+          "original_text": "ไตรมาส 1 ปี 2570",
+          "start": "2027-01-01",
+          "end": "2027-03-31",
+          "precision": "quarter",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-tenantmix"
+          ]
+        },
+        {
+          "milestone": "mall_opening",
+          "original_text": "ไตรมาส 1 ถึงกลางปี 2570",
+          "start": null,
+          "end": null,
+          "precision": "vague",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": [
+            "s-color-localupdate"
+          ]
+        },
+        {
+          "milestone": "venue_opening",
+          "original_text": null,
+          "start": null,
+          "end": null,
+          "precision": "unknown",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": []
+        }
+      ],
+      "parentSite": {
+        "name": "The Color Chaengwattana",
+        "stage": "construction",
+        "confidence": "probable",
+        "source_ids": [
+          "s-color-brand",
+          "s-color-siteworks",
+          "s-color-localupdate"
+        ],
+        "note": "Official mall announcement plus reported site progress; not inspected on site and not evidence of playground fit-out."
+      },
+      "aliases": [],
+      "mapPrecision": "unconfirmed",
+      "zones": [],
+      "detail": "A possible venue/operator discovery opportunity worth checking with the mall's tenant team. Reported mall completion and opening milestones need reconciliation; neither is the playground opening date."
+    },
+    {
+      "id": "th-sunday-playland-suphan-buri",
+      "name": "Sunday Playland — Robinson Lifestyle Suphan Buri",
+      "country": "Thailand",
+      "suburb": "Suphan Buri province",
+      "region": "Suphan Buri province",
+      "address": "Not published",
+      "phase": "open",
+      "confidence": "high",
+      "assessment": "An October 2025 announcement planned this branch for 2026. A February 2026 brand PR lists this specific branch as open.",
+      "opening": "Already operating in PR dated 26 February 2026",
+      "openingInfo": {
+        "label": "Already operating in PR dated 26 February 2026",
+        "start": null,
+        "end": "2026-02-26",
+        "precision": "day",
+        "basis": "actual"
+      },
+      "type": "Indoor play / family entertainment",
+      "checked": "2026-09-10",
+      "unknowns": [
+        "Exact first trading day",
+        "Verified map pin"
+      ],
+      "next": "Keep as existing venue / operator account; re-alert only on new expansion or upgrade evidence.",
+      "sources": [
+        {
+          "publisher": "Central Retail",
+          "url": "https://www.centralretail.com/th/newsroom/news-and-activities/1130/โรบินสันไลฟ์สไตล์-ชวนคุณหนูๆ-ปล่อยพลังแห่งจินตนาการ-รับปิดเทอมนี้ไปกับ-sunday-playland-สวนสนุกในร่มสุดพรีเมียม-ที่ครอบคลุมทั่วไทย",
+          "channel": "operator_announcement",
+          "claim": "Suphan Buri branch was planned for 2026.",
+          "date": "2025-10-08",
+          "checked": "2026-09-10",
+          "access": "read"
+        },
+        {
+          "publisher": "Naewna / Robinson Lifestyle PR",
+          "url": "https://www.naewna.com/relation/949468",
+          "channel": "operator_pr_syndication",
+          "claim": "Brand PR explicitly lists Suphan Buri among nine operating branches and describes its Under The Sea theme.",
+          "date": "2026-02-26",
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "dateClaims": [
+        {
+          "milestone": "venue_opening",
+          "original_text": "ปี 2569",
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "precision": "year",
+          "basis": "planned",
+          "state": "superseded",
+          "source_ids": [
+            "s-sunday-plan"
+          ]
+        },
+        {
+          "milestone": "venue_opening",
+          "original_text": "Already operating in PR dated 26 February 2026",
+          "start": null,
+          "end": "2026-02-26",
+          "precision": "day",
+          "date_relation": "on_or_before",
+          "basis": "actual",
+          "state": "current",
+          "source_ids": [
+            "s-sunday-open"
+          ]
+        }
+      ],
+      "parentSite": null,
+      "aliases": [],
+      "mapPrecision": "unconfirmed",
+      "zones": [],
+      "detail": ""
+    },
+    {
+      "id": "th-harborland-central-krabi",
+      "name": "HarborLand — Central Krabi",
+      "country": "Thailand",
+      "suburb": "Krabi province",
+      "region": "Krabi province",
+      "address": "Not published",
+      "phase": "open",
+      "confidence": "high",
+      "assessment": "Operator's page identifies this indoor children's venue and reports its opening on 10 April 2026.",
+      "opening": "April 10, 2026 (2:00 PM)",
+      "openingInfo": {
+        "label": "April 10, 2026 (2:00 PM)",
+        "start": "2026-04-10",
+        "end": "2026-04-10",
+        "precision": "day",
+        "basis": "actual"
+      },
+      "type": "Indoor play / family entertainment",
+      "checked": "2026-09-10",
+      "unknowns": [
+        "Verified map pin and full venue address"
+      ],
+      "next": "Keep as existing venue / operator account; do not treat old new-branch news as current construction.",
+      "sources": [
+        {
+          "publisher": "HarborLand Group",
+          "url": "https://harborlandgroup.com/open-now-harborland-central-krabi/",
+          "channel": "operator_announcement",
+          "claim": "Operator's Open Now page states launch on 10 April 2026 at Central Krabi.",
+          "date": null,
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "dateClaims": [
+        {
+          "milestone": "venue_opening",
+          "original_text": "April 10, 2026 (2:00 PM)",
+          "start": "2026-04-10",
+          "end": "2026-04-10",
+          "precision": "day",
+          "basis": "actual",
+          "state": "current",
+          "source_ids": [
+            "s-harbor-krabi-open"
+          ]
+        }
+      ],
+      "parentSite": null,
+      "aliases": [],
+      "mapPrecision": "unconfirmed",
+      "zones": [],
+      "detail": ""
+    },
+    {
+      "id": "au-pimpama-75-nexus-indoor-play",
+      "name": "Indoor playground and cafe — 75 Nexus Drive, Pimpama",
+      "country": "Australia",
+      "suburb": "Gold Coast",
+      "region": "Pimpama, Queensland",
+      "address": "75 Nexus Drive, Pimpama QLD 4209",
+      "phase": "planning",
+      "confidence": "high",
+      "assessment": "Municipal application explicitly identifies an indoor playground with ancillary cafe. The portal displays In Progress.",
+      "opening": "Not confirmed",
+      "openingInfo": {
+        "label": "Not confirmed",
+        "start": null,
+        "end": null,
+        "precision": "unknown",
+        "basis": "planned"
+      },
+      "type": "Indoor play / family entertainment",
+      "checked": "2026-09-10",
+      "unknowns": [
+        "Operator / trading brand",
+        "Application lodgement and decision dates",
+        "Latest approval outcome",
+        "Fit-out and procurement status",
+        "Opening date"
+      ],
+      "next": "Check application documents for applicant and project contacts, distinguish agent from operator, then verify project status and opening target.",
+      "sources": [
+        {
+          "publisher": "City of Gold Coast",
+          "url": "https://developmenti.goldcoast.qld.gov.au/Home/ApplicationDetailsView?appNo=MCU%2F2026%2F213&type=plan_development_apps",
+          "channel": "planning_application",
+          "claim": "Application describes an indoor playground and ancillary cafe at 75 Nexus Drive, Pimpama QLD 4209. Readable portal shows In Progress; lodged and decided dates are blank.",
+          "date": null,
+          "checked": "2026-09-10",
+          "access": "read"
+        }
+      ],
+      "dateClaims": [
+        {
+          "milestone": "venue_opening",
+          "original_text": null,
+          "start": null,
+          "end": null,
+          "precision": "unknown",
+          "basis": "planned",
+          "state": "current",
+          "source_ids": []
+        }
+      ],
+      "parentSite": null,
+      "aliases": [],
+      "mapPrecision": "unconfirmed",
+      "zones": [],
+      "detail": "An identifiable early project suitable for operator and timing verification."
+    }
+  ],
+  "coverage": [
+    {
+      "country": "Australia",
+      "scope": "Greater Melbourne inventory; selected Pimpama planning record",
+      "checked": "2026-09-12"
+    },
+    {
+      "country": "Thailand",
+      "scope": "Selected mall and operator records",
+      "checked": "2026-09-10"
+    }
+  ],
+  "monitorConnected": false
+}

@@ -42,3 +42,13 @@ Native browser 200% zoom has not been separately certified. Google Maps logged a
 - Chromium authenticated production homepage inspected visually. No synthetic test records were written to production.
 - The original standalone Site exclusion table and fingerprint endpoint were checked at migration: both empty. Its data was not deleted or modified. The new workbench maintains its own authoritative exclusions; the older Site is not synchronised.
 - GitHub Actions passed the initial integration commit. Direct Cloudflare deployment is verified; connected-repository automatic build triggers could not be inspected with the available OAuth scope.
+
+## 13 September update
+
+- Reused the latest sourced venue/social research and shared trigger, chart and marker modules. MASTER.md governs visual direction; ui-ux-pro-max navigation, focus, responsive density and feedback guidance applied.
+- Full desktop navigation labels; same navigation on mobile. Global Alerts has 15 sourced signals, dated updates, Create alert guidance, 35 persisted trigger preferences and revision-protected follow-up notes. No research API or recurring scanner is connected.
+- User's latest request supersedes earlier modal behavior: all detail drawers are nonmodal, outside pointer/wheel interactions dismiss them, another record switches selection. Inside controls remain usable. Venue photos have previous/next arrows and map labels appear at zoom 14.
+- Desktop venue filters verified on one row; overview, alerts and embedded venue layouts pass overflow checks at 375, 768, 1024, 1440 and 1920px. Mobile navigation verified.
+- Real Chromium verified nonmodal details, outside dismissal, map-marker opening, zoomed labels and Google photo previous/next controls. Global alert creation guidance and saved trigger controls verified.
+- 5 Node and 9 SQLite checks passed. Local HTTP checks cover authentication, 147-record Melbourne collection, 15 alerts, 35 triggers, stale trigger/review conflicts, excluded alerts, note preservation and R2 upload/download.
+- Production migration is additive. Existing venue research was refreshed only for sourced social/revenue fields under revision and exclusion guards. Original import guard accepted 147 records against a fresh hosted ledger. Manual notes and permanent exclusions are preserved; test writes stayed local.

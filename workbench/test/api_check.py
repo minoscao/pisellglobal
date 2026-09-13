@@ -34,5 +34,18 @@ p=parsed(request('/api/projects/'+pid));assert request('/api/projects/'+pid,'PAT
 assert request('/api/projects/'+pid,'PATCH',{**p,'name':'Stale overwrite'})[0]==409
 boundary='pisell-'+uuid.uuid4().hex;raw=(f'--{boundary}\r\nContent-Disposition: form-data; name="project_id"\r\n\r\n{pid}\r\n--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="validation.txt"\r\nContent-Type: text/plain\r\n\r\nValidation file in local R2 only.\r\n--{boundary}--\r\n').encode()
 r=request('/api/files','POST',raw=raw,content_type='multipart/form-data; boundary='+boundary);assert r[0]==201,r[1];fid=parsed(r)['id'];r=request('/api/files/'+fid);assert r[0]==200 and r[1]==b'Validation file in local R2 only.';assert request('/api/files/'+fid,authenticated=False)[0]==401
-assert 'attachment' in r[2]['Content-Disposition'];assert request('/api/logout','POST',{})[0]==200;assert request('/api/bootstrap')[0]==401
+assert 'attachment' in r[2]['Content-Disposition']
+rules=parsed(request('/api/triggers'))['triggers'];assert len(rules)==35
+trigger=next(r for r in rules if r['id']=='opening-jobs');change={'enabled':not trigger['enabled'],'priority':'minor','revision':trigger['revision']}
+r=request('/api/triggers/opening-jobs','PUT',change);assert r[0]==200,r[1]
+assert request('/api/triggers/opening-jobs','PUT',change)[0]==409
+assert request('/api/triggers/opening-jobs','PUT',{**change,'priority':'high'})[0]==400
+alerts=parsed(request('/api/alerts'))['records'];assert len(alerts)==15
+alert=alerts[0];review={'status':'reviewed','note':'API validation','ownerId':'minos','nextAction':'Check primary source','revision':alert['review']['revision']}
+assert request('/api/alerts/'+alert['id']+'/review','PUT',review)[0]==200
+assert request('/api/alerts/'+alert['id']+'/review','PUT',review)[0]==409
+request('/api/exclusions/'+venue_id,'POST');assert all(a['venueId']!=venue_id for a in parsed(request('/api/alerts'))['records']);request('/api/exclusions/'+venue_id,'DELETE')
+assert request('/api/alerts',authenticated=False)[0]==401
+assert request('/api/triggers',authenticated=False)[0]==401
+assert request('/api/logout','POST',{})[0]==200;assert request('/api/bootstrap')[0]==401
 print('HTTP checks passed: authentication, CSRF, data/source integrity, exclusions, note/project conflicts, private R2 upload/download and session revocation.')

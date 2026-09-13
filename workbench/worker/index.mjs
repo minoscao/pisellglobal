@@ -1,3 +1,4 @@
+import {alertRoutes} from './alerts.mjs';
 import {uid,eventIdentity,safeUrl,validateProject,exhibitionTasks,TASK_STATUS} from './model.mjs';
 
 const enc=new TextEncoder();
@@ -30,13 +31,14 @@ async function fetchHandler(req,env){
  }
  if(p==='/api/session')return json(user?{...user,signedIn:true,canEdit:user.role!=='viewer'}:{signedIn:false,canEdit:false});
  if(p==='/api/logout'&&req.method==='POST'){if(token)await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await sha(token)).run();return json({ok:true},200,{'set-cookie':'pisell_session=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0'});}
- if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
+ if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
  if(mutation&&user.role==='viewer')return json({error:'Editing access is required.'},403);
+ const alertResponse=await alertRoutes(req,env,user);if(alertResponse)return alertResponse;
  if(p==='/api/bootstrap'){
   const [projects,users,regions,activity,counts]=await Promise.all([
    query(db,`SELECT p.*,u.name owner_name,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status!='cancelled') task_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status='done') done_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.needs_decision=1 AND t.status NOT IN ('done','cancelled')) decision_count FROM work_projects p LEFT JOIN users u ON u.id=p.owner_id ORDER BY p.updated_at DESC`),
    query(db,'SELECT id,name FROM users'),query(db,'SELECT * FROM regions'),query(db,'SELECT a.*,u.name user_name FROM activity a LEFT JOIN users u ON u.id=a.user_id ORDER BY a.created_at DESC LIMIT 15'),
-   one(db,`SELECT (SELECT count(*) FROM exhibitions) exhibitions,(SELECT count(*) FROM venues WHERE id NOT IN (SELECT id FROM exclusions)) venues,(SELECT count(DISTINCT company_id) FROM partners WHERE status='active') partners,(SELECT count(*) FROM opportunities WHERE disposition='active') opportunities,(SELECT count(DISTINCT o.company_id) FROM opportunities o JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE m.milestone='V3' AND m.revoked_at IS NULL) customers`)
+   one(db,`SELECT (SELECT count(*) FROM exhibitions) exhibitions,(SELECT count(*) FROM venues v WHERE v.id IN (SELECT venue_id FROM venue_collections WHERE collection='melbourne') AND NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys vk JOIN exclusion_keys ek ON ek.key=vk.key WHERE vk.venue_id=v.id)) venues,(SELECT count(DISTINCT company_id) FROM partners WHERE status='active') partners,(SELECT count(*) FROM opportunities WHERE disposition='active') opportunities,(SELECT count(DISTINCT o.company_id) FROM opportunities o JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE m.milestone='V3' AND m.revoked_at IS NULL) customers`)
   ]);return json({user,projects,users,regions,activity,counts});
  }
  if(p==='/api/projects'&&req.method==='POST'){
@@ -71,7 +73,7 @@ async function fetchHandler(req,env){
   if(statements.length)await db.batch([...statements,audit(db,user,'exhibition','collection','Research saved',{added,notes:Object.keys(notes).length})]);return json({ok:true,added});
  }
  if(p==='/api/data'||p==='/data.json'||p==='/api/venues'){
-  const [meta,rows]=await Promise.all([one(db,'SELECT payload FROM dataset_metadata WHERE key=?','venues'),query(db,'SELECT v.payload FROM venues v WHERE NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys vk JOIN exclusion_keys ek ON ek.key=vk.key WHERE vk.venue_id=v.id) ORDER BY v.rowid')]);return json({...JSON.parse(meta?.payload||'{}'),venues:payloads(rows)});
+  const [meta,rows]=await Promise.all([one(db,'SELECT payload FROM dataset_metadata WHERE key=?','venues'),query(db,"SELECT v.payload FROM venues v WHERE (v.id IN (SELECT venue_id FROM venue_collections WHERE collection='melbourne') OR ?='all') AND NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys vk JOIN exclusion_keys ek ON ek.key=vk.key WHERE vk.venue_id=v.id) ORDER BY v.rowid",p==='/api/venues'?'all':'melbourne')]);return json({...JSON.parse(meta?.payload||'{}'),venues:payloads(rows)});
  }
  if(p==='/api/exclusions'){if(req.method!=='GET')return json({error:'Action unavailable.'},405);return json({records:(await query(db,'SELECT * FROM exclusions ORDER BY removed_at DESC')).map(r=>({id:r.id,venue:JSON.parse(r.snapshot),removedAt:r.removed_at}))});}
  const exclusion=p.match(/^\/api\/exclusions\/([^/]+)$/);

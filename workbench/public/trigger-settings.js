@@ -1,0 +1,17 @@
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export async function triggerSettings({host,api,canEdit,notify=()=>{}}){
+ host.innerHTML='<p role="status">Loading saved alert rules…</p>';
+ try{
+  const {triggers}=await api('/api/triggers');
+  host.innerHTML=`<h2>Alert triggers</h2><p class="muted">${triggers.length} rules · ${canEdit?'Changes save automatically':'View only'}</p><details class="trigger-help"><summary>How these rules work</summary><p>Rules apply to future alert collection. Turning a rule off keeps existing records and history. Importance is separate from evidence confidence and V0–V3 qualification. Collect new signals in GPT until a research API is configured.</p></details><label class="trigger-search">Find a rule<input type="search" placeholder="Search triggers or sources…" aria-label="Search alert triggers"></label><div class="trigger-groups">${[...new Set(triggers.map(t=>t.group))].map(g=>`<section class="trigger-group"><h3>${esc(g)}</h3>${triggers.filter(t=>t.group===g).map(t=>`<article class="trigger-row" data-trigger="${t.id}"><div><strong>${esc(t.title)}</strong><details><summary>Signal & sources</summary><p>${esc(t.signal)}</p><p><strong>Where:</strong> ${esc(t.sources)}</p><p><strong>Verify:</strong> ${esc(t.verify)}</p></details></div><label class="switch-label"><input type="checkbox" data-enabled ${t.enabled?'checked':''} ${canEdit?'':'disabled'} aria-label="Enable ${esc(t.title)}"><span>${t.enabled?'On':'Off'}</span></label><select data-priority aria-label="Priority for ${esc(t.title)}" ${canEdit?'':'disabled'}>${['important','medium','minor'].map(v=>`<option value="${v}" ${v===t.priority?'selected':''}>${v[0].toUpperCase()+v.slice(1)}</option>`).join('')}</select><span class="save-state" role="status"></span></article>`).join('')}</section>`).join('')}</div><p class="trigger-no-results" hidden>No matching rules.</p>`;
+  host.querySelector('input[type=search]').oninput=e=>{const q=e.target.value.toLowerCase();for(const row of host.querySelectorAll('[data-trigger]'))row.hidden=!row.textContent.toLowerCase().includes(q);for(const group of host.querySelectorAll('.trigger-group'))group.hidden=![...group.querySelectorAll('[data-trigger]')].some(r=>!r.hidden);host.querySelector('.trigger-no-results').hidden=[...host.querySelectorAll('.trigger-group')].some(g=>!g.hidden);};
+  host.onchange=async e=>{
+   const row=e.target.closest('[data-trigger]');if(!row)return;
+   const t=triggers.find(t=>t.id===row.dataset.trigger),check=row.querySelector('[data-enabled]'),select=row.querySelector('[data-priority]'),status=row.querySelector('.save-state');
+   const payload={enabled:check.checked,priority:select.value,revision:t.revision};check.disabled=select.disabled=true;status.textContent='Saving…';
+   try{Object.assign(t,await api('/api/triggers/'+t.id,{method:'PUT',body:JSON.stringify(payload)}));row.querySelector('.switch-label span').textContent=t.enabled?'On':'Off';status.textContent='Saved';}
+   catch(e){check.checked=t.enabled;select.value=t.priority;status.textContent='Not saved';notify(e.message,true);}
+   finally{check.disabled=select.disabled=!canEdit;}
+  };
+ }catch(e){host.innerHTML=`<p role="alert">${esc(e.message)}</p><button class="button">Reload saved rules</button>`;host.querySelector('button').onclick=()=>triggerSettings({host,api,canEdit,notify});}
+}
