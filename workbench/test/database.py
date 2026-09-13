@@ -2,7 +2,7 @@ import sqlite3, pathlib, json, unittest, subprocess
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 class DatabaseTest(unittest.TestCase):
  def setUp(self):
-  self.db=sqlite3.connect(':memory:');self.db.executescript((ROOT/'migrations/0001_growth.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0002_alerts.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'alerts.seed.sql').read_text(encoding='utf-8'));self.db.execute("INSERT INTO users(id,email,name,password_hash,password_salt,role) VALUES('test','test@example.com','Test','hash','salt','admin')");self.db.commit()
+  self.db=sqlite3.connect(':memory:');self.db.executescript((ROOT/'migrations/0001_growth.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0002_alerts.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'alerts.seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0003_customers.sql').read_text(encoding='utf-8'));self.db.execute("INSERT INTO users(id,email,name,password_hash,password_salt,role) VALUES('test','test@example.com','Test','hash','salt','admin')");self.db.commit()
  def tearDown(self):self.db.close()
  def test_counts_and_referential_integrity(self):
   self.assertEqual(self.db.execute('SELECT count(*) FROM exhibitions').fetchone()[0],34);self.assertEqual(self.db.execute('SELECT count(*) FROM venues').fetchone()[0],151);self.assertEqual(self.db.execute('PRAGMA foreign_key_check').fetchall(),[])

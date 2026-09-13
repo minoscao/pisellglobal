@@ -1,3 +1,4 @@
+import {customerRoutes,attachCommercial} from './customers.mjs';
 import {alertRoutes} from './alerts.mjs';
 import {uid,eventIdentity,safeUrl,validateProject,exhibitionTasks,TASK_STATUS} from './model.mjs';
 
@@ -31,22 +32,25 @@ async function fetchHandler(req,env){
  }
  if(p==='/api/session')return json(user?{...user,signedIn:true,canEdit:user.role!=='viewer'}:{signedIn:false,canEdit:false});
  if(p==='/api/logout'&&req.method==='POST'){if(token)await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await sha(token)).run();return json({ok:true},200,{'set-cookie':'pisell_session=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0'});}
- if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/footprint.css','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
+ if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/footprint.css','/commercial.css','/commercial-ui.js','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
  if(mutation&&user.role==='viewer')return json({error:'Editing access is required.'},403);
+ const customerResponse=await customerRoutes(req,env,user);if(customerResponse)return customerResponse;
  const alertResponse=await alertRoutes(req,env,user);if(alertResponse)return alertResponse;
  if(p==='/api/footprint'){
-  const countries=await query(db,`SELECT country,SUM(venues) venues,SUM(exhibitions) exhibitions FROM (
-   SELECT v.country,count(*) venues,0 exhibitions FROM venues v WHERE NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys k JOIN exclusion_keys e ON e.key=k.key WHERE k.venue_id=v.id) GROUP BY v.country
-   UNION ALL SELECT country,0,count(*) FROM exhibitions GROUP BY country
-  ) WHERE country IS NOT NULL AND country!='' GROUP BY country ORDER BY country`);
+  const [coverage,leads,existing,other]=await Promise.all([
+   query(db,'SELECT * FROM research_coverage'),
+   query(db,`SELECT v.id,v.country FROM venues v WHERE v.physical_stage!='closed' AND NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys k JOIN exclusion_keys e ON e.key=k.key WHERE k.venue_id=v.id) AND NOT EXISTS(SELECT 1 FROM opportunities o JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE o.venue_id=v.id AND m.milestone='V3' AND m.revoked_at IS NULL)`),
+   query(db,"SELECT country,count(*) projects FROM work_projects WHERE country IS NOT NULL AND country!='' GROUP BY country"),
+   query(db,'SELECT DISTINCT country FROM exhibitions')]);
+  const countries=[...new Set([...coverage,...leads,...existing,...other].map(r=>r.country))].map(country=>{const scan=coverage.find(r=>r.country===country),projects=existing.find(r=>r.country===country)?.projects;return {country,projects:projects??(scan?0:null),leads:scan?leads.filter(r=>r.country===country).length:null,leadVenueIds:leads.filter(r=>r.country===country).map(r=>r.id),coverage:scan||null};});
   return json({countries});
  }
  if(p==='/api/bootstrap'){
   const [projects,users,regions,activity,counts]=await Promise.all([
    query(db,`SELECT p.*,u.name owner_name,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status!='cancelled') task_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.status='done') done_count,(SELECT count(*) FROM tasks t WHERE t.project_id=p.id AND t.needs_decision=1 AND t.status NOT IN ('done','cancelled')) decision_count FROM work_projects p LEFT JOIN users u ON u.id=p.owner_id ORDER BY p.updated_at DESC`),
    query(db,'SELECT id,name FROM users'),query(db,'SELECT * FROM regions'),query(db,'SELECT a.*,u.name user_name FROM activity a LEFT JOIN users u ON u.id=a.user_id ORDER BY a.created_at DESC LIMIT 15'),
-   one(db,`SELECT (SELECT count(*) FROM exhibitions) exhibitions,(SELECT count(*) FROM venues v WHERE v.id IN (SELECT venue_id FROM venue_collections WHERE collection='melbourne') AND NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys vk JOIN exclusion_keys ek ON ek.key=vk.key WHERE vk.venue_id=v.id)) venues,(SELECT count(DISTINCT company_id) FROM partners WHERE status='active') partners,(SELECT count(*) FROM opportunities WHERE disposition='active') opportunities,(SELECT count(DISTINCT o.company_id) FROM opportunities o JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE m.milestone='V3' AND m.revoked_at IS NULL) customers`)
-  ]);return json({user,projects,users,regions,activity,counts});
+   one(db,`SELECT (SELECT count(*) FROM exhibitions) exhibitions,(SELECT count(*) FROM venues v WHERE v.id IN (SELECT venue_id FROM venue_collections WHERE collection='melbourne') AND NOT EXISTS(SELECT 1 FROM exclusions e WHERE e.id=v.id) AND NOT EXISTS(SELECT 1 FROM venue_identity_keys vk JOIN exclusion_keys ek ON ek.key=vk.key WHERE vk.venue_id=v.id)) venues,(SELECT count(DISTINCT company_id) FROM partners WHERE status='active') partners,(SELECT count(*) FROM opportunities o WHERE disposition='active' AND NOT EXISTS(SELECT 1 FROM milestone_confirmations m WHERE m.opportunity_id=o.id AND m.milestone='V3' AND m.revoked_at IS NULL)) opportunities,(SELECT count(DISTINCT o.company_id) FROM opportunities o JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE m.milestone='V3' AND m.revoked_at IS NULL) customers`)
+  ]);return json({user,projects:await attachCommercial(db,projects),users,regions,activity,counts});
  }
  if(p==='/api/projects'&&req.method==='POST'){
   const input=validateProject(await body(req,25000)),id=uid();
@@ -58,7 +62,7 @@ async function fetchHandler(req,env){
  }
  const project=p.match(/^\/api\/projects\/([^/]+)$/);
  if(project){const id=decodeURIComponent(project[1]);const record=await one(db,'SELECT * FROM work_projects WHERE id=?',id);if(!record)return json({error:'Project not found.'},404);
-  if(req.method==='GET'){const [tasks,activity,files]=await Promise.all([query(db,'SELECT * FROM tasks WHERE project_id=? ORDER BY rowid',id),query(db,'SELECT a.*,u.name user_name FROM activity a LEFT JOIN users u ON u.id=a.user_id WHERE entity_type=? AND entity_id=? ORDER BY created_at DESC','project',id),query(db,'SELECT * FROM files WHERE project_id=? ORDER BY created_at DESC',id)]);return json({...record,tasks,activity,files});}
+  if(req.method==='GET'){const [tasks,activity,files]=await Promise.all([query(db,'SELECT * FROM tasks WHERE project_id=? ORDER BY rowid',id),query(db,'SELECT a.*,u.name user_name FROM activity a LEFT JOIN users u ON u.id=a.user_id WHERE entity_type=? AND entity_id=? ORDER BY created_at DESC','project',id),query(db,'SELECT * FROM files WHERE project_id=? ORDER BY created_at DESC',id)]);return json({...record,tasks,activity,files,commercial:(await attachCommercial(db,[record]))[0].commercial});}
   if(req.method==='PATCH'){const input=validateProject({...record,...await body(req,25000)});if(input.revision!==record.revision)return json({error:'This project changed elsewhere. Reopen it to review the latest version.'},409);
    const result=await db.prepare('UPDATE work_projects SET name=?,workstream=?,status=?,owner_id=?,country=?,due_date=?,next_action=?,deliverable=?,outcome=?,revision=revision+1,updated_at=CURRENT_TIMESTAMP WHERE id=? AND revision=?').bind(input.name.trim(),input.workstream,input.status,input.owner_id||null,input.country||null,input.due_date||null,input.next_action||null,input.deliverable||null,input.outcome||null,id,input.revision).run();if(!result.meta.changes)return json({error:'This project changed elsewhere. Reload before saving.'},409);await audit(db,user,'project',id,'Project updated').run();return json({ok:true});}
  }
@@ -87,7 +91,7 @@ async function fetchHandler(req,env){
  if(exclusion){const id=decodeURIComponent(exclusion[1]);if(req.method==='POST'){const record=await one(db,'SELECT payload FROM venues WHERE id=?',id);if(!record)return json({error:'Venue not found.'},404);const keys=await query(db,'SELECT key FROM venue_identity_keys WHERE venue_id=?',id);await db.batch([db.prepare('INSERT INTO exclusions(id,snapshot,removed_by) VALUES(?,?,?) ON CONFLICT(id) DO NOTHING').bind(id,record.payload,user.id),...keys.map(k=>db.prepare('INSERT INTO exclusion_keys(key,exclusion_id) VALUES(?,?) ON CONFLICT(key) DO NOTHING').bind(k.key,id)),audit(db,user,'venue',id,'Venue excluded')]);return json({ok:true});}if(req.method==='DELETE'){await db.batch([db.prepare('DELETE FROM exclusion_keys WHERE exclusion_id=?').bind(id),db.prepare('DELETE FROM exclusions WHERE id=?').bind(id),audit(db,user,'venue',id,'Venue restored')]);return json({ok:true});}}
  if(p==='/api/customers')return json({records:await query(db,"SELECT DISTINCT c.* FROM companies c JOIN opportunities o ON o.company_id=c.id JOIN milestone_confirmations m ON m.opportunity_id=o.id WHERE m.milestone='V3' AND m.revoked_at IS NULL ORDER BY c.name")});
  if(p==='/api/companies'){return json({records:await query(db,'SELECT c.*,p.type partner_type,p.status partner_status FROM companies c LEFT JOIN partners p ON p.company_id=c.id ORDER BY c.name')});}
- if(p==='/api/opportunities')return json({records:await query(db,`SELECT o.*,c.name company_name,(SELECT max(milestone) FROM milestone_confirmations m WHERE m.opportunity_id=o.id AND revoked_at IS NULL) milestone FROM opportunities o LEFT JOIN companies c ON c.id=o.company_id`)});
+ if(p==='/api/opportunities')return json({records:await query(db,`SELECT o.*,c.name company_name,(SELECT max(milestone) FROM milestone_confirmations m WHERE m.opportunity_id=o.id AND revoked_at IS NULL) milestone FROM opportunities o LEFT JOIN companies c ON c.id=o.company_id WHERE NOT EXISTS(SELECT 1 FROM milestone_confirmations m WHERE m.opportunity_id=o.id AND m.milestone='V3' AND m.revoked_at IS NULL)`)});
  if(p==='/api/files'&&req.method==='GET')return json({records:await query(db,'SELECT * FROM files ORDER BY created_at DESC')});
  if(p==='/api/files'&&req.method==='POST'){
   const length=Number(req.headers.get('content-length'));if(length>10*1024*1024)return json({error:'Choose a file under 10 MB.'},413);const form=await req.formData(),file=form.get('file'),projectId=form.get('project_id')||null;

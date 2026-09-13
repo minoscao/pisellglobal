@@ -58,3 +58,13 @@ Native browser 200% zoom has not been separately certified. Google Maps logged a
 The overview now uses interactive Google Maps with reusable Pisell style configuration. Countries with existing venues, exhibitions or selected projects are shaded orange. Country summaries are read from D1 with permanent exclusions applied; region presence is a separate annotation. A region drawer lists the actual sourced records. Natural Earth country boundaries and attribution are recorded in THIRD-PARTY.md. The shared Google loader is reused by Global Alerts.
 
 Browser checks confirm 17 shaded region features, Thailand’s 3 venues and 2 exhibitions, Singapore’s 3 exhibitions, nonmodal region details, working zoom controls and no mobile horizontal overflow.
+
+## Existing customers and two footprint metrics — 13 September
+
+Imported the 12 playground/kids-cafe profiles from the existing Pisell Cases customer-entry library, using stable source identities. Owner confirmed signed/in-service status in this task; the original active status and the owner confirmation are retained separately from missing signed documents, dates and amounts. Four exact Melbourne venue identities are reused; brand branches are not automatically qualified. No demo POS accounts are imported.
+
+Commercial records reuse companies, opportunities, V3 confirmations, orders and payments. Customer and project Commercial tabs render the same component. Amounts use integer minor units with currency-specific precision. Unknown payment history never implies zero receipts or a calculable outstanding balance. Receipt uniqueness and revision checks prevent duplicate or stale saves. Test receipts and contract amounts were written to local development only.
+
+Footprint now separates existing work projects and active V0–V2 venue leads, excluding exact V3-linked venues and permanent exclusions. Exhibition records do not become customer leads. Darker orange represents more existing projects; lighter orange represents leads only. Known partial Australia/Thailand research is dated and scoped; unresearched regions show Not available, including when they have an existing customer project. Source country outlines are unchanged.
+
+Passed 8 Node and 9 SQLite checks, local HTTP financial precision/stale-save/duplicate-receipt checks, customer reimport preservation, customer/project Commercial navigation, United States unknown values, China existing project plus unknown leads, and 375px customer layout overflow. Shared UI guidance applied: static status badges, explicit empty data, visible field labels, saved/error feedback and keyboard focus. Source profiles and imported commercial metadata stay in authenticated D1 and private R2, not public seed files.
