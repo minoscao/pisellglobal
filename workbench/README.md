@@ -59,3 +59,16 @@ The initial owner's credentials are in ignored `access.local.json` on the deploy
 - `test/`: model, SQLite and local HTTP checks.
 
 See [Architecture](ARCHITECTURE.md) and [Validation](VALIDATION.md).
+
+## Approaching plans prepared in GPT
+
+Global Alerts and Venue Search share Summary / Evidence / Approaching Plan. Evidence includes dated venue sources and alert sources without duplicating identical claims. Plan preparation remains in GPT; the frontend only reads archived versions, copies a briefing, and opens/downloads PDFs. No generation or outbound contact API is connected.
+
+To archive a plan after the owner discussion:
+
+1. Match the existing `venueId` (shared by venue and alert drawers) or `projectId`; never create a duplicate venue to store a plan.
+2. Upload the completed PDF to the authenticated `POST /api/files` as multipart `file`, `category=approach_plan`. For work-project files also include `project_id`. PDFs remain in private R2.
+3. `POST /api/approach-plans` with exactly one `venueId` / `projectId`, `version` (positive integer, next unused version), `title`, `summary`, `preparedAt` (`YYYY-MM-DD`), `status` (`draft` or `ready`), `pdfFileId` (from upload) and `content`. Content uses `objective`, `decisionMakers`, `fit`, `outreach`, `steps`, `materials`, `unknowns`; each is text or a list of text. Keep dated actions, assumptions and confirmed decisions explicit.
+4. Ready requires a stored PDF. Existing versions cannot be overwritten. Drafts may omit the PDF. `GET /api/approach-plans?venueId=...` or `?projectId=...` lists newest versions first. The `/api/approach-plans/{id}/pdf` route previews inline; adding `?download=1` downloads it.
+
+Use the normal authorized workspace session. Viewer accounts cannot upload/archive. Archiving a plan does not contact anyone, confirm customer interest, advance qualification, or authorise delivery. Completed plans and PDFs are only added after the task discussion supplies them; no sample plans are seeded to production.

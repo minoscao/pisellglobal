@@ -78,3 +78,11 @@ Shared entity identity now displays country above the customer name, with the se
 Map colour uses one selected metric and five fixed quantity bands (1, 2–5, 6–10, 11–50, 51+). Region details retain both project and lead counts. Unknown/zero values receive no fill, and hover only outlines the region. Fit world respects the map height as well as width.
 
 UI guidance used: shared components, compact density, labelled status, real loading/error/retry states, visible focus, and responsive stacking. Checks: 8 Node + 9 SQLite tests; quantity-band boundary/unknown checks; browser verification at 1440/1024/390 px with no horizontal overflow, no homepage customer cards, preserved Projects → Dashboard navigation, selectable map metric and United States Not available values. All 12 customer images load through the authenticated R2 route. Local financial test values remain local only.
+
+## Three-tab research details and GPT plan archive — 13 September
+
+Global Alerts and Venue Search reuse the same Summary / Evidence / Approaching Plan tabs and keyboard behavior. Summary retains the current assessment, unknowns and notes; Evidence preserves the full dated source trail, adding venue sources to alert evidence and retaining channel/financial evidence. Switching tabs does not recreate the review form. The existing nonmodal drawer and dismissal pattern remain.
+
+A shared D1 approach-plan collection links to one existing venue or work project and a versioned PDF in private R2. Ready plans require an existing PDF, uploaded signature is checked, versions cannot overwrite one another, invalid dates are rejected, and all plan/PDF routes require the normal authenticated session. The frontend reads saved plans, copies a GPT briefing and previews/downloads PDFs; it does not generate plans or call an AI service. No production plan or PDF has been invented.
+
+Validation: 8 Node and 10 SQLite checks passed. Browser checks verified the three tabs in both integrated research modules, complete source counts, empty-plan state, and saved-plan rendering. A local-only PDF round trip returned 201; missing PDF returned 400, duplicate version 409, and dual venue/project association 400. Inline/download content dispositions and PDF bytes were verified. The original customer images and flow-first homepage remain deployed.

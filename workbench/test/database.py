@@ -2,7 +2,16 @@ import sqlite3, pathlib, json, unittest, subprocess
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 class DatabaseTest(unittest.TestCase):
  def setUp(self):
-  self.db=sqlite3.connect(':memory:');self.db.executescript((ROOT/'migrations/0001_growth.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0002_alerts.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'alerts.seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0003_customers.sql').read_text(encoding='utf-8'));self.db.execute("INSERT INTO users(id,email,name,password_hash,password_salt,role) VALUES('test','test@example.com','Test','hash','salt','admin')");self.db.commit()
+  self.db=sqlite3.connect(':memory:');self.db.executescript((ROOT/'migrations/0001_growth.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0002_alerts.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'alerts.seed.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0003_customers.sql').read_text(encoding='utf-8'));self.db.executescript((ROOT/'migrations/0004_approach_plans.sql').read_text(encoding='utf-8'));self.db.execute("INSERT INTO users(id,email,name,password_hash,password_salt,role) VALUES('test','test@example.com','Test','hash','salt','admin')");self.db.commit()
+ def test_approach_plan_versions_and_pdf_integrity(self):
+  venue=self.db.execute('SELECT id FROM venues LIMIT 1').fetchone()[0]
+  insert="INSERT INTO approach_plans(id,venue_id,version,title,status,prepared_at,created_by) VALUES(?,?,?,'Internal approach','draft','2026-09-13','test')"
+  self.db.execute(insert,('plan-one',venue,1))
+  with self.assertRaises(sqlite3.IntegrityError):self.db.execute(insert,('duplicate',venue,1))
+  with self.assertRaises(sqlite3.IntegrityError):self.db.execute(insert,('unlinked',None,1))
+  with self.assertRaises(sqlite3.IntegrityError):self.db.execute("UPDATE approach_plans SET status='ready' WHERE id='plan-one'")
+  self.db.execute(insert,('plan-two',venue,2))
+  self.assertEqual(self.db.execute('SELECT count(*) FROM approach_plans').fetchone()[0],2)
  def tearDown(self):self.db.close()
  def test_counts_and_referential_integrity(self):
   self.assertEqual(self.db.execute('SELECT count(*) FROM exhibitions').fetchone()[0],34);self.assertEqual(self.db.execute('SELECT count(*) FROM venues').fetchone()[0],151);self.assertEqual(self.db.execute('PRAGMA foreign_key_check').fetchall(),[])
