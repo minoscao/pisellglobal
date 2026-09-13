@@ -13,6 +13,27 @@ class DatabaseTest(unittest.TestCase):
   self.db.execute(insert,('plan-two',venue,2))
   self.assertEqual(self.db.execute('SELECT count(*) FROM approach_plans').fetchone()[0],2)
  def tearDown(self):self.db.close()
+ def marketing_setup(self):
+  self.db.executescript((ROOT/'migrations/0005_marketing_library.sql').read_text(encoding='utf-8'))
+  self.db.execute("INSERT INTO files(id,object_key,name,content_type,bytes,sha256,owner_id,category) VALUES('art','marketing/art','art.png','image/png',100,'','test','marketing')")
+  for ident,kind in [('asset-one','asset'),('asset-two','asset'),('material-one','material')]:
+   self.db.execute("INSERT INTO marketing_items(id,kind,title,category,language,format,file_id,owner_id) VALUES(?,?,?,'solution','en','illustration','art','test')",(ident,kind,ident))
+  self.db.execute("INSERT INTO marketing_derivations VALUES('material-one','asset-one')");self.db.commit()
+ def test_material_sources_have_valid_direction_and_stable_identity(self):
+  self.marketing_setup()
+  for pair in [('asset-one','material-one'),('material-one','material-one'),('material-one','missing')]:
+   with self.assertRaises(sqlite3.IntegrityError):self.db.execute('INSERT INTO marketing_derivations VALUES(?,?)',pair)
+  with self.assertRaises(sqlite3.IntegrityError):self.db.execute("UPDATE marketing_items SET kind='material' WHERE id='asset-one'")
+  with self.assertRaises(sqlite3.IntegrityError):self.db.execute("DELETE FROM marketing_items WHERE id='asset-one'")
+  self.assertEqual(self.db.execute('PRAGMA foreign_key_check').fetchall(),[])
+ def test_stale_material_edit_preserves_source_links(self):
+  self.marketing_setup()
+  with self.assertRaises(sqlite3.IntegrityError):
+   with self.db:
+    self.db.execute("DELETE FROM marketing_derivations WHERE material_id='material-one'")
+    self.db.execute("UPDATE marketing_items SET title='stale',revision=CASE WHEN revision=0 THEN revision+1 ELSE NULL END WHERE id='material-one'")
+  self.assertEqual(self.db.execute('SELECT asset_id FROM marketing_derivations').fetchone()[0],'asset-one')
+  self.assertEqual(self.db.execute("SELECT title FROM marketing_items WHERE id='material-one'").fetchone()[0],'material-one')
  def test_counts_and_referential_integrity(self):
   self.assertEqual(self.db.execute('SELECT count(*) FROM exhibitions').fetchone()[0],34);self.assertEqual(self.db.execute('SELECT count(*) FROM venues').fetchone()[0],151);self.assertEqual(self.db.execute('PRAGMA foreign_key_check').fetchall(),[])
  def test_import_rerun_preserves_notes_and_exclusions(self):

@@ -72,3 +72,13 @@ To archive a plan after the owner discussion:
 4. Ready requires a stored PDF. Existing versions cannot be overwritten. Drafts may omit the PDF. `GET /api/approach-plans?venueId=...` or `?projectId=...` lists newest versions first. The `/api/approach-plans/{id}/pdf` route previews inline; adding `?download=1` downloads it.
 
 Use the normal authorized workspace session. Viewer accounts cannot upload/archive. Archiving a plan does not contact anyone, confirm customer interest, advance qualification, or authorise delivery. Completed plans and PDFs are only added after the task discussion supplies them; no sample plans are seeded to production.
+
+## Marketing Library
+
+Assets and Materials share one record layout and central category / language / format / status configuration. `marketing_items` stores metadata and private file references; `marketing_derivations` links a material to existing asset IDs. Types are immutable, links are validated and revision checks reject stale saves. The Overview consumes these same records and thumbnails.
+
+Authenticated uploads use `POST /api/marketing/uploads` with name, contentType and bytes, then sequential 8 MB `PUT /api/marketing/uploads/{id}/parts?part=N` bodies, followed by `POST .../complete`. Completion validates all parts and is retryable; files up to 250 MB are supported. Multipart records leave the legacy SHA-256 field empty rather than claiming a whole-file hash was computed. Original, preview and thumbnail objects are private R2 files; no browser API key or public bucket is required.
+
+`GET /api/marketing/items` lists records. POST creates and PUT `/api/marketing/items/{id}` updates using `revision`, `kind`, `title`, `category`, `language`, `format`, `status`, `version`, `description`, `sourceNote`, `fileId`, optional `previewFileId` / `thumbnailFileId`, and `assetIds`. GET `/file`, `/preview` and `/thumbnail` require authentication. Uploaded images receive lightweight WebP thumbnails. Uploading or marking a material ready does not send it to customers.
+
+Initial production content uses the Playground Solution v07 PNG preview and six source assets. **Do not upload the PSD files**; the editable Photoshop sources remain local at the user's request. The v07 material stays Draft; printing specifications have not been approved.
