@@ -1,0 +1,10 @@
+{
+  "requiredAssets": [
+    "research-coverage.js", "research-coverage.css", "research-coverage.geojson",
+    "exhibitor-directory.js", "entity-grading.js", "entity-table.js", "entity-table.css"
+  ],
+  "requiredReferences": {
+    "alerts.js": ["research-coverage.js", "createCoverageLayer"],
+    "venues/app.js": ["research-coverage.js", "createCoverageLayer"]
+  }
+}
