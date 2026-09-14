@@ -5,6 +5,8 @@
   ],
   "requiredReferences": {
     "alerts.js": ["research-coverage.js", "createCoverageLayer"],
-    "venues/app.js": ["research-coverage.js", "createCoverageLayer"]
+    "venues/app.js": ["research-coverage.js", "createCoverageLayer"],
+    "exhibitions/tracker.js": ["enhanceExhibitions", "'Exhibitors'", "mountExhibitors"],
+    "exhibitor-directory.js": ["enhanceExhibitions"]
   }
 }

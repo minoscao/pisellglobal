@@ -2,6 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {build} from 'esbuild';
 
+export async function checkReleaseContract(assetRoot,contract){
+ for(const name of contract.requiredAssets)await fs.access(path.join(assetRoot,name));
+ for(const [name,references] of Object.entries(contract.requiredReferences)){
+  const body=await fs.readFile(path.join(assetRoot,name),'utf8');
+  for(const reference of references)if(!body.includes(reference))throw Error('Release would remove a required feature reference: '+name+' → '+reference);
+ }
+ return checkReleaseAssets(assetRoot);
+}
+
 // Parse every shipped module, including routes reached only through dynamic imports.
 export async function checkReleaseAssets(assetRoot){
  const root=path.resolve(assetRoot),entries=[];

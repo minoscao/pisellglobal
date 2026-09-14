@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
-import {checkReleaseAssets} from './check-release-assets.mjs';
+import {checkReleaseContract} from './check-release-assets.mjs';
 const root=fileURLToPath(new URL('../..',import.meta.url));
 const args=process.argv.slice(2),get=k=>args[args.indexOf(k)+1];
 if(!args.includes('--config')||!args.includes('--base-version'))throw Error('Use --config <reviewed staging config> --base-version <production version used to prepare it>.');
@@ -16,12 +16,7 @@ try{
  const contract=JSON.parse(await fs.readFile(path.join(root,'workbench/release-contract.json'),'utf8'));
  const cfg=JSON.parse(await fs.readFile(config,'utf8'));
  const assetRoot=path.resolve(path.dirname(config),cfg.assets.directory);
- for(const name of contract.requiredAssets)await fs.access(path.join(assetRoot,name));
- await checkReleaseAssets(assetRoot);
- for(const [name,required] of Object.entries(contract.requiredReferences)){
-  const body=await fs.readFile(path.join(assetRoot,name),'utf8');
-  for(const text of required)if(!body.includes(text))throw Error('Release would remove a required feature reference: '+name+' → '+text);
- }
+ await checkReleaseContract(assetRoot,contract);
  const cli=path.join(root,'workbench/node_modules/wrangler/bin/wrangler.js');
  const r=spawnSync(process.execPath,[cli,'deployments','list','--config',config,'--json'],{encoding:'utf8'});
  if(r.status!==0)throw Error('Could not verify production version. '+r.stderr);

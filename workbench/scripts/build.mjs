@@ -1,6 +1,7 @@
 import {mkdir,cp,readFile,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {checkReleaseContract} from './check-release-assets.mjs';
 const root=fileURLToPath(new URL('..',import.meta.url));
 await mkdir(path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
@@ -10,5 +11,6 @@ await cp(path.join(root,'public','pisell-logo.png'),path.join(root,'dist','venue
 await cp(path.join(root,'public','pisell-logo.png'),path.join(root,'dist','exhibitions','pisell-logo.png'));
 const files=['index.html','app.js','style.css','world-map.json','exhibitions/tracker.js','exhibitions/connection.js','venues/index.html'];
 for(const f of files)await readFile(path.join(root,'dist',f));
+await checkReleaseContract(path.join(root,'dist'),JSON.parse(await readFile(path.join(root,'release-contract.json'),'utf8')));
 await writeFile(path.join(root,'dist','build.json'),JSON.stringify({builtAt:new Date().toISOString(),modules:['workspace','exhibitions','venue-discovery']}));
 console.log('Built workspace and two integrated modules. Research data is served from D1.');
