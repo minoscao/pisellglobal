@@ -1,3 +1,4 @@
+import {mapsConfigRoute} from './maps-config.mjs';
 import {customerRoutes,attachCommercial} from './customers.mjs';
 import {growthSummary} from './growth-summary.mjs';
 import {approachPlanRoutes} from './approach-plans.mjs';
@@ -35,6 +36,7 @@ async function fetchHandler(req,env){
  }
  if(p==='/api/session')return json(user?{...user,signedIn:true,canEdit:user.role!=='viewer'}:{signedIn:false,canEdit:false});
  if(p==='/api/logout'&&req.method==='POST'){if(token)await db.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await sha(token)).run();return json({ok:true},200,{'set-cookie':'pisell_session=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0'});}
+ const mapsResponse=mapsConfigRoute(req,env,user);if(mapsResponse)return mapsResponse;
  if(!user){if(p.startsWith('/api/')||p==='/data.json')return json({error:'Please sign in to continue.'},401);if(!['/','/index.html','/app.js','/config.js','/style.css','/navigation.css','/alerts.css','/footprint.css','/commercial.css','/growth-dashboard.css','/record-detail.css','/marketing-library.css','/commercial-ui.js','/trigger-settings.css','/detail-interactions.js','/pisell-logo.png','/favicon.ico'].includes(p))return new Response('Sign in required',{status:401});return env.ASSETS.fetch(req);}
  if(mutation&&user.role==='viewer')return json({error:'Editing access is required.'},403);
  const customerResponse=await customerRoutes(req,env,user);if(customerResponse)return customerResponse;
